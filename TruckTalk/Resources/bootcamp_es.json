@@ -1,0 +1,222 @@
+{
+  "id": "trucktalk_bootcamp_v2_es",
+  "title": {
+    "en": "TruckTalk Complete Training Program",
+    "es": "Programa Completo de Entrenamiento TruckTalk"
+  },
+  "description": {
+    "en": "Comprehensive English training program for professional truck drivers",
+    "es": "Programa integral de entrenamiento en inglés para conductores profesionales de camiones"
+  },
+  "totalDays": 6,
+  "estimatedHours": 24,
+  "difficulty": "beginner",
+  "days": [
+    {
+      "id": 1,
+      "title": {
+        "en": "Module 1: Basic Greetings & ID Check",
+        "es": "Módulo 1: Saludos Básicos y Verificación de Identificación"
+      },
+      "description": {
+        "en": "Essential phrases for introducing yourself and handling ID verification with law enforcement",
+        "es": "Frases esenciales para presentarse y manejar la verificación de identificación con las autoridades"
+      },
+      "isUnlocked": true,
+      "completionPercentage": 0.0,
+      "estimatedMinutes": 240,
+      "objectives": {
+        "en": [
+          "Master professional greetings",
+          "Handle ID and document requests",
+          "Understand basic law enforcement interactions",
+          "Practice polite and respectful communication"
+        ],
+        "es": [
+          "Dominar los saludos profesionales",
+          "Manejar solicitudes de identificación y documentos",
+          "Entender las interacciones básicas con las autoridades",
+          "Practicar comunicación cortés y respetuosa"
+        ]
+      },
+      "sections": [
+        {
+          "id": "greetings_vocab",
+          "type": "vocabulary",
+          "title": {
+            "en": "Professional Greetings",
+            "es": "Saludos Profesionales"
+          },
+          "description": {
+            "en": "Essential greetings for law enforcement interactions",
+            "es": "Saludos esenciales para interacciones con las autoridades"
+          },
+          "estimatedMinutes": 60,
+          "content": [
+            {
+              "id": "greeting_1",
+              "englishText": "Good morning, officer",
+              "translations": {
+                "es": "Buenos días, oficial",
+                "tr": "Günaydın memur bey",
+                "ru": "Доброе утро, офицер",
+                "ky": "Кайрылуу таң, милиция кызматкери"
+              },
+              "audioFileName": "good_morning_officer.mp3",
+              "isCompleted": false,
+              "isFavorited": false,
+              "contentType": "phrase",
+              "difficulty": "beginner",
+              "tags": ["greeting", "police", "professional"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": {
+        "en": "Module 2: Road Signs & Traffic Rules",
+        "es": "Módulo 2: Señales de Tráfico y Reglas de Tránsito"
+      },
+      "description": {
+        "en": "Understanding common road signs and explaining your driving actions to authorities",
+        "es": "Entender las señales de tráfico comunes y explicar sus acciones de manejo a las autoridades"
+      },
+      "isUnlocked": true,
+      "completionPercentage": 0.0,
+      "estimatedMinutes": 240,
+      "objectives": {
+        "en": [
+          "Identify common road signs",
+          "Explain traffic rule compliance",
+          "Understand weight and size restrictions",
+          "Communicate route planning decisions"
+        ],
+        "es": [
+          "Identificar señales de tráfico comunes",
+          "Explicar el cumplimiento de las reglas de tráfico",
+          "Entender las restricciones de peso y tamaño",
+          "Comunicar decisiones de planificación de rutas"
+        ]
+      },
+      "sections": []
+    },
+    {
+      "id": 3,
+      "title": {
+        "en": "Module 3: Police & DOT Officer Interactions",
+        "es": "Módulo 3: Interacciones con Policía y Oficiales del DOT"
+      },
+      "description": {
+        "en": "Professional communication with law enforcement during inspections and stops",
+        "es": "Comunicación profesional con las autoridades durante inspecciones y paradas"
+      },
+      "isUnlocked": false,
+      "completionPercentage": 0.0,
+      "estimatedMinutes": 240,
+      "objectives": {
+        "en": [
+          "Handle DOT inspections professionally",
+          "Understand your rights and obligations",
+          "Communicate equipment issues clearly",
+          "Maintain respectful interactions"
+        ],
+        "es": [
+          "Manejar inspecciones del DOT profesionalmente",
+          "Entender sus derechos y obligaciones",
+          "Comunicar problemas de equipo claramente",
+          "Mantener interacciones respetuosas"
+        ]
+      },
+      "sections": []
+    },
+    {
+      "id": 4,
+      "title": {
+        "en": "Module 4: Emergency & Accident Situations",
+        "es": "Módulo 4: Situaciones de Emergencia y Accidentes"
+      },
+      "description": {
+        "en": "Critical vocabulary for handling roadside emergencies and accident reporting",
+        "es": "Vocabulario crítico para manejar emergencias en carretera y reportes de accidentes"
+      },
+      "isUnlocked": false,
+      "completionPercentage": 0.0,
+      "estimatedMinutes": 240,
+      "objectives": {
+        "en": [
+          "Report accidents accurately",
+          "Request emergency assistance",
+          "Communicate with first responders",
+          "Handle insurance and legal procedures"
+        ],
+        "es": [
+          "Reportar accidentes con precisión",
+          "Solicitar asistencia de emergencia",
+          "Comunicarse con primeros auxilios",
+          "Manejar procedimientos legales y de seguros"
+        ]
+      },
+      "sections": []
+    },
+    {
+      "id": 5,
+      "title": {
+        "en": "Module 5: Border Crossing & Inspection",
+        "es": "Módulo 5: Cruce de Fronteras e Inspección"
+      },
+      "description": {
+        "en": "Essential communication for border crossings and customs inspections",
+        "es": "Comunicación esencial para cruces fronterizos e inspecciones aduanales"
+      },
+      "isUnlocked": false,
+      "completionPercentage": 0.0,
+      "estimatedMinutes": 240,
+      "objectives": {
+        "en": [
+          "Navigate customs procedures",
+          "Present shipping documents",
+          "Understand inspection processes",
+          "Handle international freight documentation"
+        ],
+        "es": [
+          "Navegar procedimientos aduanales",
+          "Presentar documentos de envío",
+          "Entender procesos de inspección",
+          "Manejar documentación de carga internacional"
+        ]
+      },
+      "sections": []
+    },
+    {
+      "id": 6,
+      "title": {
+        "en": "Module 6: Vehicle Maintenance Vocabulary",
+        "es": "Módulo 6: Vocabulario de Mantenimiento Vehicular"
+      },
+      "description": {
+        "en": "Technical terms for truck parts, maintenance, and mechanical issues",
+        "es": "Términos técnicos para partes de camión, mantenimiento y problemas mecánicos"
+      },
+      "isUnlocked": false,
+      "completionPercentage": 0.0,
+      "estimatedMinutes": 240,
+      "objectives": {
+        "en": [
+          "Describe mechanical problems",
+          "Communicate with mechanics",
+          "Understand maintenance schedules",
+          "Handle equipment inspections"
+        ],
+        "es": [
+          "Describir problemas mecánicos",
+          "Comunicarse con mecánicos",
+          "Entender horarios de mantenimiento",
+          "Manejar inspecciones de equipo"
+        ]
+      },
+      "sections": []
+    }
+  ]
+} 

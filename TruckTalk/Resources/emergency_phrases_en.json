@@ -1,0 +1,466 @@
+[
+  {
+    "id": "police_1",
+    "category": "police_stop",
+    "englishText": "Good morning, officer. I'm a commercial truck driver.",
+    "translations": {
+      "en": "Good morning, officer. I'm a commercial truck driver.",
+      "es": "Buenos días, oficial. Soy un conductor comercial de camiones.",
+      "tr": "Günaydın memur bey. Ben ticari kamyon şoförüyüm.",
+      "ar": "صباح الخير، يا ضابط. أنا سائق شاحنة تجاري.",
+      "pt": "Bom dia, oficial. Sou um motorista comercial de caminhões.",
+      "ru": "Доброе утро, офицер. Я коммерческий водитель грузовика.",
+      "ky": "Кайрылуу таң, милиция кызматкери. Мен коммерциялык жүк ташуучу айдоочумун."
+    },
+    "audioFileName": "police_good_morning.mp3",
+    "priority": 1,
+    "urgencyLevel": "high",
+    "contextNotes": {
+      "en": "Use immediately when approached by law enforcement",
+      "es": "Úselo inmediatamente cuando se acerque la policía"
+    },
+    "relatedPhrases": ["police_2", "police_3"]
+  },
+  {
+    "id": "police_2",
+    "category": "police_stop",
+    "englishText": "Here are my license, registration, and logbook.",
+    "translations": {
+      "en": "Here are my license, registration, and logbook.",
+      "es": "Aquí están mi licencia, registro y libro de registro.",
+      "tr": "İşte ehliyetim, ruhsatım ve seyir defterim.",
+      "ar": "إليك رخصتي وتسجيلي ودفتر السجل.",
+      "pt": "Aqui estão minha licença, registro e livro de registro.",
+      "ru": "Вот мои права, регистрация и журнал.",
+      "ky": "Мына менин күбөлүгүм, каттоом жана журналым."
+    },
+    "audioFileName": "police_documents.mp3",
+    "priority": 2,
+    "urgencyLevel": "high",
+    "contextNotes": {
+      "en": "Have documents ready before being asked",
+      "es": "Tenga los documentos listos antes de que se los pidan"
+    },
+    "relatedPhrases": []
+  },
+  {
+    "id": "police_3",
+    "category": "police_stop",
+    "englishText": "I am transporting [freight type] from [origin] to [destination].",
+    "translations": {
+      "en": "I am transporting [freight type] from [origin] to [destination].",
+      "es": "Estoy transportando [tipo de carga] de [origen] a [destino].",
+      "tr": "[Kargo türü]'nü [köken]'den [varış noktası]'na taşıyorum.",
+      "ar": "أنا أنقل [نوع البضائع] من [المنشأ] إلى [الوجهة].",
+      "pt": "Estou transportando [tipo de carga] de [origem] para [destino].",
+      "ru": "Я перевожу [тип груза] из [происхождение] в [назначение].",
+      "ky": "Мен [жүк түрү]н [баштапкы жер]ден [барар жер]ге ташып жатам."
+    },
+    "audioFileName": "police_cargo_info.mp3",
+    "priority": 3,
+    "urgencyLevel": "medium",
+    "contextNotes": {
+      "en": "Replace bracketed text with actual cargo information"
+    },
+    "relatedPhrases": []
+  },
+  {
+    "id": "vehicle_1",
+    "category": "vehicle_trouble",
+    "englishText": "My truck has broken down and I need roadside assistance.",
+    "translations": {
+      "en": "My truck has broken down and I need roadside assistance.",
+      "es": "Mi camión se ha averiado y necesito asistencia en carretera.",
+      "tr": "Kamyonum bozuldu ve yol kenarı yardıma ihtiyacım var.",
+      "ar": "تعطلت شاحنتي وأحتاج إلى مساعدة على الطريق.",
+      "pt": "Meu caminhão quebrou e preciso de assistência na estrada.",
+      "ru": "Мой грузовик сломался, и мне нужна помощь на дороге.",
+      "ky": "Менин жүк ташуучум бузулду жана мага жол четиндеги жардам керек."
+    },
+    "audioFileName": "vehicle_breakdown.mp3",
+    "priority": 1,
+    "urgencyLevel": "high",
+    "contextNotes": {
+      "en": "Call for help immediately if your vehicle breaks down"
+    },
+    "relatedPhrases": []
+  },
+  {
+    "id": "vehicle_2",
+    "category": "vehicle_trouble",
+    "englishText": "I have a flat tire and need help changing it.",
+    "translations": {
+      "en": "I have a flat tire and need help changing it.",
+      "es": "Tengo una llanta ponchada y necesito ayuda para cambiarla.",
+      "tr": "Lastiğim patladı ve değiştirmek için yardıma ihtiyacım var.",
+      "ar": "لدي إطار مفرغ وأحتاج مساعدة في تغييره.",
+      "pt": "Tenho um pneu furado e preciso de ajuda para trocá-lo.",
+      "ru": "У меня спущена шина, нужна помощь в её замене.",
+      "ky": "Менин дөңгөлөгүм жарылды жана аны алмаштыруу үчүн жардам керек."
+    },
+    "audioFileName": "vehicle_flat_tire.mp3",
+    "priority": 2,
+    "urgencyLevel": "medium",
+    "contextNotes": {
+      "en": "Call for help immediately if your vehicle has a flat tire"
+    },
+    "relatedPhrases": []
+  },
+  {
+    "id": "vehicle_3",
+    "category": "vehicle_trouble",
+    "englishText": "My engine is overheating. Where is the nearest truck stop?",
+    "translations": {
+      "en": "My engine is overheating. Where is the nearest truck stop?",
+      "es": "Mi motor se está sobrecalentando. ¿Dónde está la parada de camiones más cercana?",
+      "tr": "Motorom aşırı ısınıyor. En yakın kamyon durağı nerede?",
+      "ar": "محركي يسخن. أين أقرب محطة شاحنات؟",
+      "pt": "Meu motor está superaquecendo. Onde fica o posto de caminhões mais próximo?",
+      "ru": "Мой двигатель перегревается. Где ближайшая стоянка для грузовиков?",
+      "ky": "Менин мотор ашыкча ысып жатат. Эң жакын жүк ташуучулар токтогон жер кайда?"
+    },
+    "audioFileName": "vehicle_overheating.mp3",
+    "priority": 3,
+    "urgencyLevel": "high",
+    "contextNotes": {
+      "en": "Call for help immediately if your vehicle is overheating"
+    },
+    "relatedPhrases": []
+  },
+  {
+    "id": "medical_1",
+    "category": "medical_emergency",
+    "englishText": "This is an emergency! Please call 911 immediately!",
+    "translations": {
+      "en": "This is an emergency! Please call 911 immediately!",
+      "es": "¡Esta es una emergencia! ¡Por favor llame al 911 inmediatamente!",
+      "tr": "Bu bir acil durum! Lütfen hemen 911'i arayın!",
+      "ar": "هذه حالة طوارئ! يرجى الاتصال بـ 911 فوراً!",
+      "pt": "Esta é uma emergência! Por favor, ligue para 911 imediatamente!",
+      "ru": "Это экстренная ситуация! Пожалуйста, немедленно вызовите 911!",
+      "ky": "Бул шашылыш кырдаал! Сураныч, дароо 911ге чалыңыз!"
+    },
+    "audioFileName": "medical_call_911.mp3",
+    "priority": 1,
+    "urgencyLevel": "critical",
+    "contextNotes": {
+      "en": "Use for any life-threatening emergency"
+    },
+    "relatedPhrases": []
+  },
+  {
+    "id": "medical_2",
+    "category": "medical_emergency",
+    "englishText": "I need a doctor. I am having chest pain.",
+    "translations": {
+      "en": "I need a doctor. I am having chest pain.",
+      "es": "Necesito un médico. Tengo dolor en el pecho.",
+      "tr": "Doktora ihtiyacım var. Göğüs ağrım var.",
+      "ar": "أحتاج طبيباً. أعاني من ألم في الصدر.",
+      "pt": "Preciso de um médico. Estou com dor no peito.",
+      "ru": "Мне нужен врач. У меня боль в груди.",
+      "ky": "Мага дарыгер керек. Менин көкүрөгүм оорушаат."
+    },
+    "audioFileName": "medical_chest_pain.mp3",
+    "priority": 2,
+    "urgencyLevel": "critical",
+    "contextNotes": {
+      "en": "Call for help immediately if you are experiencing chest pain"
+    },
+    "relatedPhrases": []
+  },
+  {
+    "id": "medical_3",
+    "category": "medical_emergency",
+    "englishText": "Someone is unconscious and not breathing.",
+    "translations": {
+      "en": "Someone is unconscious and not breathing.",
+      "es": "Alguien está inconsciente y no respira.",
+      "tr": "Birisi bilinçsiz ve nefes almıyor.",
+      "ar": "شخص ما فاقد الوعي ولا يتنفس.",
+      "pt": "Alguém está inconsciente e não está respirando.",
+      "ru": "Кто-то без сознания и не дышит.",
+      "ky": "Кимдир бири эсин жоготуп, дем албай жатат."
+    },
+    "audioFileName": "medical_unconscious.mp3",
+    "priority": 3,
+    "urgencyLevel": "critical",
+    "contextNotes": {
+      "en": "Call for help immediately if someone is unconscious and not breathing"
+    },
+    "relatedPhrases": []
+  },
+  {
+    "id": "accident_1",
+    "category": "accident_report",
+    "englishText": "There has been an accident. I need to report it to the police.",
+    "translations": {
+      "en": "There has been an accident. I need to report it to the police.",
+      "es": "Ha habido un accidente. Necesito reportarlo a la policía.",
+      "tr": "Bir kaza oldu. Polise bildirmem gerekiyor.",
+      "ar": "لقد حدث حادث. أحتاج للإبلاغ عنه للشرطة.",
+      "pt": "Houve um acidente. Preciso reportá-lo à polícia.",
+      "ru": "Произошла авария. Мне нужно сообщить об этом в полицию.",
+      "ky": "Кырсык болду. Мен аны полицияга билдиришим керек."
+    },
+    "audioFileName": "accident_report.mp3",
+    "priority": 1,
+    "urgencyLevel": "high",
+    "contextNotes": {
+      "en": "Report accidents immediately to authorities"
+    },
+    "relatedPhrases": []
+  },
+  {
+    "id": "accident_2",
+    "category": "accident_report",
+    "englishText": "My truck number is [number]. My company is [company name].",
+    "translations": {
+      "en": "My truck number is [number]. My company is [company name].",
+      "es": "El número de mi camión es [número]. Mi empresa es [nombre de la empresa].",
+      "tr": "Kamyon numaramı [numara]. Şirketim [şirket adı].",
+      "ar": "رقم شاحنتي هو [رقم]. شركتي هي [اسم الشركة].",
+      "pt": "O número do meu caminhão é [número]. Minha empresa é [nome da empresa].",
+      "ru": "Номер моего грузовика [номер]. Моя компания [название компании].",
+      "ky": "Менин жүк ташуучунун номери [номер]. Менин компаниям [компания аты]."
+    },
+    "audioFileName": "accident_truck_info.mp3",
+    "priority": 2,
+    "urgencyLevel": "medium",
+    "contextNotes": {
+      "en": "Provide your truck's number and company name"
+    },
+    "relatedPhrases": []
+  },
+  {
+    "id": "road_1",
+    "category": "road_assistance",
+    "englishText": "I need a tow truck. My location is mile marker [number] on [highway].",
+    "translations": {
+      "en": "I need a tow truck. My location is mile marker [number] on [highway].",
+      "es": "Necesito una grúa. Mi ubicación es el marcador de milla [número] en [autopista].",
+      "tr": "Çekici kamyona ihtiyacım var. Konumum [otoyol] üzerinde [numara] mil işareti.",
+      "ar": "أحتاج شاحنة سحب. موقعي عند علامة الميل [رقم] على [الطريق السريع].",
+      "pt": "Preciso de um guincho. Minha localização é o marco quilométrico [número] na [rodovia].",
+      "ru": "Мне нужен эвакуатор. Я нахожусь на отметке [номер] миль на [шоссе].",
+      "ky": "Мага тартуучу керек. Менин жайгашкан жерим [жол] дагы [номер] миля белгиси."
+    },
+    "audioFileName": "road_tow_truck.mp3",
+    "priority": 1,
+    "urgencyLevel": "medium",
+    "contextNotes": {
+      "en": "Call for help immediately if your vehicle needs to be towed"
+    },
+    "relatedPhrases": []
+  },
+  {
+    "id": "cb_1",
+    "category": "cb_radio",
+    "englishText": "Breaker 1-9, this is [handle]. Anyone got your ears on?",
+    "translations": {
+      "en": "Breaker 1-9, this is [handle]. Anyone got your ears on?",
+      "es": "Breaker 1-9, aquí [indicativo]. ¿Alguien me escucha?",
+      "tr": "Breaker 1-9, ben [çağrı adı]. Kimse dinliyor mu?",
+      "ar": "بريكر 1-9، هنا [المعرف]. هل يسمعني أحد؟",
+      "pt": "Breaker 1-9, aqui é [indicativo]. Alguém está ouvindo?",
+      "ru": "Брейкер 1-9, это [позывной]. Кто-нибудь слышит?",
+      "ky": "Breaker 1-9, бул [чакыруу аты]. Кимдир бири угуп жатабы?"
+    },
+    "audioFileName": "cb_breaker.mp3",
+    "priority": 1,
+    "urgencyLevel": "low",
+    "contextNotes": {
+      "en": "Use for communication with emergency services"
+    },
+    "relatedPhrases": []
+  },
+  {
+    "id": "cb_2",
+    "category": "cb_radio",
+    "englishText": "What's the smokey situation eastbound on I-80?",
+    "translations": {
+      "en": "What's the smokey situation eastbound on I-80?",
+      "es": "¿Cuál es la situación policial hacia el este en la I-80?",
+      "tr": "I-80'de doğuya doğru polis durumu nasıl?",
+      "ar": "ما هو وضع الشرطة شرقاً على الطريق السريع I-80؟",
+      "pt": "Qual é a situação da polícia sentido leste na I-80?",
+      "ru": "Какая обстановка с полицией на восток по I-80?",
+      "ky": "I-80 дагы чыгышка карай полиция кандай абалда?"
+    },
+    "audioFileName": "cb_smokey_check.mp3",
+    "priority": 2,
+    "urgencyLevel": "low",
+    "contextNotes": {
+      "en": "Use for communication with emergency services"
+    },
+    "relatedPhrases": []
+  },
+  {
+    "id": "truck_stop_1",
+    "category": "truck_stop",
+    "englishText": "I need to fuel up. Where are the diesel pumps?",
+    "translations": {
+      "en": "I need to fuel up. Where are the diesel pumps?",
+      "es": "Necesito cargar combustible. ¿Dónde están las bombas de diésel?",
+      "tr": "Yakıt almam gerekiyor. Dizel pompaları nerede?",
+      "ar": "أحتاج لتعبئة الوقود. أين مضخات الديزل؟",
+      "pt": "Preciso abastecer. Onde ficam as bombas de diesel?",
+      "ru": "Мне нужно заправиться. Где дизельные колонки?",
+      "ky": "Мага отун куюу керек. Дизель насостору кайда?"
+    },
+    "audioFileName": "truck_stop_fuel.mp3",
+    "priority": 1,
+    "urgencyLevel": "medium",
+    "contextNotes": {
+      "en": "Call for help immediately if your vehicle needs fuel"
+    },
+    "relatedPhrases": []
+  },
+  {
+    "id": "truck_stop_2",
+    "category": "truck_stop",
+    "englishText": "Is there parking available for overnight?",
+    "translations": {
+      "en": "Is there parking available for overnight?",
+      "es": "¿Hay estacionamiento disponible para pasar la noche?",
+      "tr": "Gecelik park yeri var mı?",
+      "ar": "هل تتوفر مواقف للمبيت؟",
+      "pt": "Há estacionamento disponível para pernoitar?",
+      "ru": "Есть ли парковка на ночь?",
+      "ky": "Түнөп калуу үчүн токтотуучу жай барбы?"
+    },
+    "audioFileName": "truck_stop_parking.mp3",
+    "priority": 2,
+    "urgencyLevel": "medium",
+    "contextNotes": {
+      "en": "Call for help immediately if your vehicle needs parking"
+    },
+    "relatedPhrases": []
+  },
+  {
+    "id": "loading_1",
+    "category": "loading_unloading",
+    "englishText": "I'm here for the pickup. Here's my bill of lading.",
+    "translations": {
+      "en": "I'm here for the pickup. Here's my bill of lading.",
+      "es": "Estoy aquí para la recogida. Aquí está mi conocimiento de embarque.",
+      "tr": "Teslimat almak için buradayım. İşte konşimentom.",
+      "ar": "أنا هنا للاستلام. إليك بوليصة الشحن.",
+      "pt": "Estou aqui para a coleta. Aqui está meu conhecimento de embarque.",
+      "ru": "Я здесь за грузом. Вот коносамент.",
+      "ky": "Мен жүк алуу үчүн келдим. Мына менин жүк кагазым."
+    },
+    "audioFileName": "loading_pickup.mp3",
+    "priority": 1,
+    "urgencyLevel": "medium",
+    "contextNotes": {
+      "en": "Call for help immediately if you need to pick up a load"
+    },
+    "relatedPhrases": []
+  },
+  {
+    "id": "loading_2",
+    "category": "loading_unloading",
+    "englishText": "Where do I back up to for loading?",
+    "translations": {
+      "en": "Where do I back up to for loading?",
+      "es": "¿Dónde debo retroceder para cargar?",
+      "tr": "Yükleme için nereye geri girmem gerekiyor?",
+      "ar": "أين يجب أن أعكس الاتجاه للتحميل؟",
+      "pt": "Onde devo dar ré para carregar?",
+      "ru": "Куда мне подъехать задом для загрузки?",
+      "ky": "Жүк салуу үчүн кайсы жерге артка чегинишим керек?"
+    },
+    "audioFileName": "loading_backup.mp3",
+    "priority": 2,
+    "urgencyLevel": "low",
+    "contextNotes": {
+      "en": "Call for help immediately if you need to back up for loading"
+    },
+    "relatedPhrases": []
+  },
+  {
+    "id": "weather_1",
+    "category": "weather_emergency",
+    "englishText": "The roads are icy and dangerous. I need to stop driving.",
+    "translations": {
+      "en": "The roads are icy and dangerous. I need to stop driving.",
+      "es": "Las carreteras están heladas y peligrosas. Necesito parar de conducir.",
+      "tr": "Yollar buzlu ve tehlikeli. Sürmeyi bırakmam gerekiyor.",
+      "ar": "الطرق متجمدة وخطيرة. أحتاج للتوقف عن القيادة.",
+      "pt": "As estradas estão geladas e perigosas. Preciso parar de dirigir.",
+      "ru": "Дороги обледенели и опасны. Мне нужно прекратить движение.",
+      "ky": "Жолдор муздак жана коркунучтуу. Мен айдоодон токтошум керек."
+    },
+    "audioFileName": "weather_icy_roads.mp3",
+    "priority": 1,
+    "urgencyLevel": "high",
+    "contextNotes": {
+      "en": "Call for help immediately if the roads are icy and dangerous"
+    },
+    "relatedPhrases": []
+  },
+  {
+    "id": "weather_2",
+    "category": "weather_emergency",
+    "englishText": "There's a severe storm ahead. Is there a safe place to wait?",
+    "translations": {
+      "en": "There's a severe storm ahead. Is there a safe place to wait?",
+      "es": "Hay una tormenta severa adelante. ¿Hay un lugar seguro para esperar?",
+      "tr": "Önde şiddetli bir fırtına var. Beklemek için güvenli bir yer var mı?",
+      "ar": "هناك عاصفة شديدة أمامنا. هل يوجد مكان آمن للانتظار؟",
+      "pt": "Há uma tempestade severa à frente. Há um lugar seguro para esperar?",
+      "ru": "Впереди сильная буря. Есть ли безопасное место для ожидания?",
+      "ky": "Алдыда катуу бороон бар. Күтүү үчүн коопсуз жер барбы?"
+    },
+    "audioFileName": "weather_storm.mp3",
+    "priority": 2,
+    "urgencyLevel": "high",
+    "contextNotes": {
+      "en": "Call for help immediately if there's a severe storm ahead"
+    },
+    "relatedPhrases": []
+  },
+  {
+    "id": "comm_1",
+    "category": "communication",
+    "englishText": "I don't speak English very well. Can you speak slowly?",
+    "translations": {
+      "en": "I don't speak English very well. Can you speak slowly?",
+      "es": "No hablo inglés muy bien. ¿Puede hablar despacio?",
+      "tr": "İngilizce çok iyi konuşamıyorum. Yavaş konuşabilir misiniz?",
+      "ar": "لا أتحدث الإنجليزية جيداً. هل يمكنك التحدث ببطء؟",
+      "pt": "Não falo inglês muito bem. Pode falar devagar?",
+      "ru": "Я не очень хорошо говорю по-английски. Можете говорить медленно?",
+      "ky": "Мен англис тилин жакшы билбейм. Жай сүйлөй аласызбы?"
+    },
+    "audioFileName": "comm_speak_slowly.mp3",
+    "priority": 1,
+    "urgencyLevel": "medium",
+    "contextNotes": {
+      "en": "Call for help immediately if you need communication assistance"
+    },
+    "relatedPhrases": []
+  },
+  {
+    "id": "comm_2",
+    "category": "communication",
+    "englishText": "Can you repeat that, please?",
+    "translations": {
+      "en": "Can you repeat that, please?",
+      "es": "¿Puede repetir eso, por favor?",
+      "tr": "Bunu tekrarlayabilir misiniz, lütfen?",
+      "ar": "هل يمكنك تكرار ذلك، من فضلك؟",
+      "pt": "Pode repetir isso, por favor?",
+      "ru": "Можете повторить, пожалуйста?",
+      "ky": "Муну кайталай аласызбы, сураныч?"
+    },
+    "audioFileName": "comm_repeat.mp3",
+    "priority": 2,
+    "urgencyLevel": "medium",
+    "contextNotes": {
+      "en": "Call for help immediately if you need communication assistance"
+    },
+    "relatedPhrases": []
+  }
+] 

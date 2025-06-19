@@ -1,0 +1,293 @@
+{
+  "id": "trucktalk_bootcamp_v2",
+  "title": {
+    "en": "TruckTalk Complete Training Program"
+  },
+  "description": {
+    "en": "Comprehensive English training program for professional truck drivers"
+  },
+  "totalDays": 6,
+  "estimatedHours": 24,
+  "difficulty": "beginner",
+  "days": [
+    {
+      "id": 1,
+      "title": {
+        "en": "Module 1: Basic Greetings & ID Check"
+      },
+      "description": {
+        "en": "Essential phrases for introducing yourself and handling ID verification with law enforcement"
+      },
+      "isUnlocked": true,
+      "completionPercentage": 0.0,
+      "estimatedMinutes": 240,
+      "objectives": {
+        "en": [
+          "Master professional greetings",
+          "Handle ID and document requests",
+          "Understand basic law enforcement interactions",
+          "Practice polite and respectful communication"
+        ]
+      },
+      "sections": [
+        {
+          "id": "greetings_vocab",
+          "type": "vocabulary",
+          "title": {
+            "en": "Professional Greetings"
+          },
+          "description": {
+            "en": "Essential greetings for law enforcement interactions"
+          },
+          "estimatedMinutes": 60,
+          "content": [
+            {
+              "id": "greeting_1",
+              "englishText": "Good morning, officer",
+              "translations": {
+                "es": "Buenos días, oficial",
+                "tr": "Günaydın memur bey",
+                "ru": "Доброе утро, офицер",
+                "ky": "Кайрылуу таң, милиция кызматкери"
+              },
+              "audioFileName": "good_morning_officer.mp3",
+              "isCompleted": false,
+              "isFavorited": false,
+              "contentType": "phrase",
+              "difficulty": "beginner",
+              "tags": ["greeting", "police", "professional"]
+            },
+            {
+              "id": "greeting_2",
+              "englishText": "Here is my driver's license",
+              "translations": {
+                "es": "Aquí está mi licencia de conducir",
+                "tr": "İşte ehliyetim",
+                "ru": "Вот мои водительские права",
+                "ky": "Мына менин айдоочулук күбөлүгүм"
+              },
+              "audioFileName": "drivers_license.mp3",
+              "isCompleted": false,
+              "isFavorited": false,
+              "contentType": "phrase",
+              "difficulty": "beginner",
+              "tags": ["documents", "license", "identification"]
+            },
+            {
+              "id": "greeting_3",
+              "englishText": "I am a professional truck driver",
+              "translations": {
+                "es": "Soy un conductor profesional de camiones",
+                "tr": "Ben profesyonel bir kamyon şoförüyüm",
+                "ru": "Я профессиональный водитель грузовика",
+                "ky": "Мен кесиптик жүк ташуучу айдоочумун"
+              },
+              "audioFileName": "professional_driver.mp3",
+              "isCompleted": false,
+              "isFavorited": false,
+              "contentType": "phrase",
+              "difficulty": "beginner",
+              "tags": ["profession", "identity", "introduction"]
+            }
+          ]
+        },
+        {
+          "id": "id_check_dialogue",
+          "type": "dialogue",
+          "title": {
+            "en": "ID Check Scenario"
+          },
+          "description": {
+            "en": "Practice a complete ID verification interaction"
+          },
+          "estimatedMinutes": 90,
+          "content": [
+            {
+              "id": "dialogue_id_1",
+              "englishText": "Officer: Good morning. I'm conducting a routine inspection. May I see your license and registration?",
+              "translations": {
+                "es": "Oficial: Buenos días. Estoy realizando una inspección de rutina. ¿Puedo ver su licencia y registro?",
+                "tr": "Memur: Günaydın. Rutin kontrol yapıyorum. Ehliyetinizi ve ruhsatınızı görebilir miyim?",
+                "ru": "Офицер: Доброе утро. Я провожу плановую проверку. Могу я увидеть ваши права и регистрацию?",
+                "ky": "Милиция кызматкери: Кайрылуу таң. Мен текшерүү жүргүзүп жатам. Күбөлүгүңүздү жана каттоону көрсөтө аласызбы?"
+              },
+              "audioFileName": "officer_routine_inspection.mp3",
+              "isCompleted": false,
+              "isFavorited": false,
+              "contentType": "dialogue",
+              "difficulty": "beginner",
+              "tags": ["inspection", "documents", "routine"]
+            },
+            {
+              "id": "dialogue_id_2",
+              "englishText": "Driver: Good morning, officer. Yes, here are my documents. I'm a commercial truck driver.",
+              "translations": {
+                "es": "Conductor: Buenos días, oficial. Sí, aquí están mis documentos. Soy un conductor comercial de camiones.",
+                "tr": "Şoför: Günaydın memur bey. Evet, işte belgelerim. Ben ticari kamyon şoförüyüm.",
+                "ru": "Водитель: Доброе утро, офицер. Да, вот мои документы. Я коммерческий водитель грузовика.",
+                "ky": "Айдоочу: Кайрылуу таң, милиция кызматкери. Ооба, мына менин документтерим. Мен коммерциялык жүк ташуучу айдоочумун."
+              },
+              "audioFileName": "driver_documents_response.mp3",
+              "isCompleted": false,
+              "isFavorited": false,
+              "contentType": "dialogue",
+              "difficulty": "beginner",
+              "tags": ["response", "documents", "commercial"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": {
+        "en": "Module 2: Road Signs & Traffic Rules"
+      },
+      "description": {
+        "en": "Understanding common road signs and explaining your driving actions to authorities"
+      },
+      "isUnlocked": true,
+      "completionPercentage": 0.0,
+      "estimatedMinutes": 240,
+      "objectives": {
+        "en": [
+          "Identify common road signs",
+          "Explain traffic rule compliance",
+          "Understand weight and size restrictions",
+          "Communicate route planning decisions"
+        ]
+      },
+      "sections": [
+        {
+          "id": "road_signs_vocab",
+          "type": "vocabulary",
+          "title": {
+            "en": "Road Signs & Traffic Terms"
+          },
+          "description": {
+            "en": "Essential vocabulary for road signs and traffic regulations"
+          },
+          "estimatedMinutes": 80,
+          "content": [
+            {
+              "id": "sign_1",
+              "englishText": "No trucks over 10,000 pounds",
+              "translations": {
+                "es": "No camiones de más de 10,000 libras",
+                "tr": "10,000 pound üzerindeki kamyonlar giremez",
+                "ru": "Грузовики свыше 10,000 фунтов запрещены",
+                "ky": "10,000 фунттан оор жүк ташуучулар тыйылат"
+              },
+              "audioFileName": "no_trucks_weight.mp3",
+              "isCompleted": false,
+              "isFavorited": false,
+              "contentType": "vocabulary",
+              "difficulty": "intermediate",
+              "tags": ["signs", "weight", "restrictions"]
+            },
+            {
+              "id": "sign_2",
+              "englishText": "Truck route required",
+              "translations": {
+                "es": "Ruta de camiones requerida",
+                "tr": "Kamyon rotası zorunlu",
+                "ru": "Требуется грузовой маршрут",
+                "ky": "Жүк ташуучулар үчүн жол талап кылынат"
+              },
+              "audioFileName": "truck_route_required.mp3",
+              "isCompleted": false,
+              "isFavorited": false,
+              "contentType": "vocabulary",
+              "difficulty": "intermediate",
+              "tags": ["signs", "route", "mandatory"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": {
+        "en": "Module 3: Police & DOT Officer Interactions"
+      },
+      "description": {
+        "en": "Professional communication with law enforcement during inspections and stops"
+      },
+      "isUnlocked": false,
+      "completionPercentage": 0.0,
+      "estimatedMinutes": 240,
+      "objectives": {
+        "en": [
+          "Handle DOT inspections professionally",
+          "Understand your rights and obligations",
+          "Communicate equipment issues clearly",
+          "Maintain respectful interactions"
+        ]
+      },
+      "sections": []
+    },
+    {
+      "id": 4,
+      "title": {
+        "en": "Module 4: Emergency & Accident Situations"
+      },
+      "description": {
+        "en": "Critical vocabulary for handling roadside emergencies and accident reporting"
+      },
+      "isUnlocked": false,
+      "completionPercentage": 0.0,
+      "estimatedMinutes": 240,
+      "objectives": {
+        "en": [
+          "Report accidents accurately",
+          "Request emergency assistance",
+          "Communicate with first responders",
+          "Handle insurance and legal procedures"
+        ]
+      },
+      "sections": []
+    },
+    {
+      "id": 5,
+      "title": {
+        "en": "Module 5: Border Crossing & Inspection"
+      },
+      "description": {
+        "en": "Essential communication for border crossings and customs inspections"
+      },
+      "isUnlocked": false,
+      "completionPercentage": 0.0,
+      "estimatedMinutes": 240,
+      "objectives": {
+        "en": [
+          "Navigate customs procedures",
+          "Present shipping documents",
+          "Understand inspection processes",
+          "Handle international freight documentation"
+        ]
+      },
+      "sections": []
+    },
+    {
+      "id": 6,
+      "title": {
+        "en": "Module 6: Vehicle Maintenance Vocabulary"
+      },
+      "description": {
+        "en": "Technical terms for truck parts, maintenance, and mechanical issues"
+      },
+      "isUnlocked": false,
+      "completionPercentage": 0.0,
+      "estimatedMinutes": 240,
+      "objectives": {
+        "en": [
+          "Describe mechanical problems",
+          "Communicate with mechanics",
+          "Understand maintenance schedules",
+          "Handle equipment inspections"
+        ]
+      },
+      "sections": []
+    }
+  ]
+} 

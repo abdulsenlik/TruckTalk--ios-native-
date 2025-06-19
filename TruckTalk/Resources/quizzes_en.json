@@ -1,0 +1,414 @@
+[
+  {
+    "id": "day_1_quiz",
+    "title": {
+      "en": "Day 1: Greetings & Introductions Quiz"
+    },
+    "description": {
+      "en": "Test your knowledge of basic greetings and professional introductions"
+    },
+    "passingScore": 70,
+    "timeLimit": 300,
+    "difficulty": "beginner",
+    "category": "vocabulary",
+    "questions": [
+      {
+        "id": "q1_greetings",
+        "type": "multiple_choice",
+        "question": {
+          "en": "What is the most professional way to greet someone in the morning?"
+        },
+        "options": [
+          {
+            "id": "opt_1",
+            "text": {
+              "en": "Good morning"
+            },
+            "isCorrect": true
+          },
+          {
+            "id": "opt_2",
+            "text": {
+              "en": "Hey there"
+            },
+            "isCorrect": false
+          },
+          {
+            "id": "opt_3",
+            "text": {
+              "en": "What's up"
+            },
+            "isCorrect": false
+          },
+          {
+            "id": "opt_4",
+            "text": {
+              "en": "Yo"
+            },
+            "isCorrect": false
+          }
+        ],
+        "correctAnswerIds": ["opt_1"],
+        "explanation": {
+          "en": "'Good morning' is the most professional and appropriate greeting for business situations."
+        },
+        "points": 10
+      },
+      {
+        "id": "q2_introduction",
+        "type": "fill_in_blank",
+        "question": {
+          "en": "Complete the introduction: 'Hello, my name ___ John Smith.'"
+        },
+        "options": [
+          {
+            "id": "blank_1",
+            "text": {
+              "en": "is"
+            },
+            "isCorrect": true
+          }
+        ],
+        "correctAnswerIds": ["blank_1"],
+        "explanation": {
+          "en": "The correct form is 'my name is' when introducing yourself."
+        },
+        "points": 10
+      },
+      {
+        "id": "q3_response",
+        "type": "multiple_choice",
+        "question": {
+          "en": "What is the best response to 'Nice to meet you'?"
+        },
+        "options": [
+          {
+            "id": "resp_1",
+            "text": {
+              "en": "Nice to meet you too"
+            },
+            "isCorrect": true
+          },
+          {
+            "id": "resp_2",
+            "text": {
+              "en": "Whatever"
+            },
+            "isCorrect": false
+          },
+          {
+            "id": "resp_3",
+            "text": {
+              "en": "OK"
+            },
+            "isCorrect": false
+          },
+          {
+            "id": "resp_4",
+            "text": {
+              "en": "Sure"
+            },
+            "isCorrect": false
+          }
+        ],
+        "correctAnswerIds": ["resp_1"],
+        "explanation": {
+          "en": "'Nice to meet you too' is the standard polite response."
+        },
+        "points": 10
+      }
+    ]
+  },
+  {
+    "id": "day_2_quiz",
+    "title": {
+      "en": "Day 2: Vehicle & Documentation Quiz"
+    },
+    "description": {
+      "en": "Test your knowledge of truck parts and maintenance vocabulary"
+    },
+    "passingScore": 70,
+    "timeLimit": 360,
+    "difficulty": "beginner",
+    "category": "vocabulary",
+    "questions": [
+      {
+        "id": "q1_parts",
+        "type": "multiple_choice",
+        "question": {
+          "en": "What part of the truck provides power?"
+        },
+        "options": [
+          {
+            "id": "part_1",
+            "text": {
+              "en": "Engine"
+            },
+            "isCorrect": true
+          },
+          {
+            "id": "part_2",
+            "text": {
+              "en": "Brakes"
+            },
+            "isCorrect": false
+          },
+          {
+            "id": "part_3",
+            "text": {
+              "en": "Trailer"
+            },
+            "isCorrect": false
+          },
+          {
+            "id": "part_4",
+            "text": {
+              "en": "Wheels"
+            },
+            "isCorrect": false
+          }
+        ],
+        "correctAnswerIds": ["part_1"],
+        "explanation": {
+          "en": "The engine is the power source of the truck."
+        },
+        "points": 10
+      },
+      {
+        "id": "q2_safety",
+        "type": "true_false",
+        "question": {
+          "en": "Brakes are the most important safety feature on a truck."
+        },
+        "options": [
+          {
+            "id": "true",
+            "text": {
+              "en": "True"
+            },
+            "isCorrect": true
+          },
+          {
+            "id": "false",
+            "text": {
+              "en": "False"
+            },
+            "isCorrect": false
+          }
+        ],
+        "correctAnswerIds": ["true"],
+        "explanation": {
+          "en": "Brakes are indeed crucial for safety, allowing the driver to stop the heavy vehicle."
+        },
+        "points": 10
+      }
+    ]
+  },
+  {
+    "id": "emergency_quiz",
+    "title": {
+      "en": "Emergency Situations Quiz"
+    },
+    "description": {
+      "en": "Test your knowledge of critical emergency phrases and procedures"
+    },
+    "passingScore": 80,
+    "timeLimit": 600,
+    "difficulty": "intermediate",
+    "category": "emergency",
+    "questions": [
+      {
+        "id": "q1_police",
+        "type": "multiple_choice",
+        "question": {
+          "en": "When stopped by police, what should you do first?"
+        },
+        "options": [
+          {
+            "id": "police_1",
+            "text": {
+              "en": "Argue with the officer"
+            },
+            "isCorrect": false
+          },
+          {
+            "id": "police_2",
+            "text": {
+              "en": "Remain calm and have documents ready"
+            },
+            "isCorrect": true
+          },
+          {
+            "id": "police_3",
+            "text": {
+              "en": "Drive away quickly"
+            },
+            "isCorrect": false
+          },
+          {
+            "id": "police_4",
+            "text": {
+              "en": "Call your dispatcher"
+            },
+            "isCorrect": false
+          }
+        ],
+        "correctAnswerIds": ["police_2"],
+        "explanation": {
+          "en": "Always remain calm and cooperative during police stops, and have your license and registration ready."
+        },
+        "points": 15
+      },
+      {
+        "id": "q2_breakdown",
+        "type": "multiple_answer",
+        "question": {
+          "en": "If your truck breaks down, you should: (Select all that apply)"
+        },
+        "options": [
+          {
+            "id": "breakdown_1",
+            "text": {
+              "en": "Pull over safely"
+            },
+            "isCorrect": true
+          },
+          {
+            "id": "breakdown_2",
+            "text": {
+              "en": "Call for roadside assistance"
+            },
+            "isCorrect": true
+          },
+          {
+            "id": "breakdown_3",
+            "text": {
+              "en": "Keep driving to the next exit"
+            },
+            "isCorrect": false
+          },
+          {
+            "id": "breakdown_4",
+            "text": {
+              "en": "Set up warning triangles"
+            },
+            "isCorrect": true
+          }
+        ],
+        "correctAnswerIds": ["breakdown_1", "breakdown_2", "breakdown_4"],
+        "explanation": {
+          "en": "When your truck breaks down, prioritize safety by pulling over, calling for help, and setting up proper warnings."
+        },
+        "points": 20
+      }
+    ]
+  },
+  {
+    "id": "listening_quiz",
+    "title": {
+      "en": "Listening Comprehension Quiz"
+    },
+    "description": {
+      "en": "Test your ability to understand spoken English in trucking contexts"
+    },
+    "passingScore": 75,
+    "timeLimit": 480,
+    "difficulty": "intermediate",
+    "category": "listening",
+    "questions": [
+      {
+        "id": "q1_cb_radio",
+        "type": "listening",
+        "question": {
+          "en": "Listen to the CB radio message and choose the correct response:"
+        },
+        "audioFileName": "cb_radio_sample.mp3",
+        "options": [
+          {
+            "id": "cb_1",
+            "text": {
+              "en": "Copy that, eastbound. Watch for construction at mile 45."
+            },
+            "isCorrect": true
+          },
+          {
+            "id": "cb_2",
+            "text": {
+              "en": "No problem, I'll take the next exit."
+            },
+            "isCorrect": false
+          },
+          {
+            "id": "cb_3",
+            "text": {
+              "en": "Thanks for the weather update."
+            },
+            "isCorrect": false
+          }
+        ],
+        "correctAnswerIds": ["cb_1"],
+        "explanation": {
+          "en": "The correct response acknowledges the traffic information about construction."
+        },
+        "points": 15
+      }
+    ]
+  },
+  {
+    "id": "final_assessment",
+    "title": {
+      "en": "TruckTalk Final Assessment"
+    },
+    "description": {
+      "en": "Comprehensive test covering all aspects of the bootcamp"
+    },
+    "passingScore": 80,
+    "timeLimit": 1800,
+    "difficulty": "advanced",
+    "category": "final",
+    "questions": [
+      {
+        "id": "final_1",
+        "type": "ordering",
+        "question": {
+          "en": "Put the following steps in the correct order for a professional delivery:"
+        },
+        "options": [
+          {
+            "id": "step_1",
+            "text": {
+              "en": "Greet the dock worker professionally"
+            },
+            "isCorrect": false
+          },
+          {
+            "id": "step_2", 
+            "text": {
+              "en": "Present delivery paperwork"
+            },
+            "isCorrect": false
+          },
+          {
+            "id": "step_3",
+            "text": {
+              "en": "Position truck at loading dock"
+            },
+            "isCorrect": false
+          },
+          {
+            "id": "step_4",
+            "text": {
+              "en": "Complete delivery and get signature"
+            },
+            "isCorrect": false
+          }
+        ],
+        "correctAnswerIds": ["step_1", "step_2", "step_3", "step_4"],
+        "explanation": {
+          "en": "The correct order ensures professional and efficient delivery process."
+        },
+        "points": 25
+      }
+    ]
+  }
+] 
