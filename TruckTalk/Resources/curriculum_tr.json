@@ -1,0 +1,187 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2024-01-15",
+  "sections": [
+    {
+      "id": "initial-stop",
+      "title": "İlk Trafik Durdurması",
+      "description": "Bir polis memuru sizi ilk kez durdurduğunda gerekli olan temel ifadeler ve kelime hazinesi.",
+      "vocabulary": [
+        {
+          "word": "license",
+          "translation": {
+            "en": "license",
+            "es": "licencia",
+            "tr": "ehliyet",
+            "kg": "айдоочунун күбөлүгү",
+            "ru": "водительские права"
+          },
+          "definition": "araç kullanmanıza izin veren resmi belge",
+          "pronunciation": "eh-li-yet",
+          "example": "Memur bey, işte ehliyetim.",
+          "audioFileName": null
+        },
+        {
+          "word": "registration",
+          "translation": {
+            "en": "registration",
+            "es": "registro",
+            "tr": "ruhsat",
+            "kg": "каттоо күбөлүгү",
+            "ru": "регистрация"
+          },
+          "definition": "araç sahipliğini gösteren belge",
+          "pronunciation": "ruh-sat",
+          "example": "Araç ruhsatım torpido gözünde.",
+          "audioFileName": null
+        },
+        {
+          "word": "insurance",
+          "translation": {
+            "en": "insurance",
+            "es": "seguro",
+            "tr": "sigorta",
+            "kg": "камсыздандыруу",
+            "ru": "страховка"
+          },
+          "definition": "mali kayıplara karşı koruma",
+          "pronunciation": "si-gor-ta",
+          "example": "Bu kamyon için güncel sigortam var.",
+          "audioFileName": null
+        },
+        {
+          "word": "pull over",
+          "translation": {
+            "en": "pull over",
+            "es": "detenerse",
+            "tr": "kenara çekmek",
+            "kg": "четке чыгуу",
+            "ru": "съехать на обочину"
+          },
+          "definition": "aracınızı yolun kenarına çekmek",
+          "pronunciation": "ke-na-ra çek-mek",
+          "example": "Sağ omuza kenara çekeceğim.",
+          "audioFileName": null
+        },
+        {
+          "word": "officer",
+          "translation": {
+            "en": "officer",
+            "es": "oficial",
+            "tr": "memur",
+            "kg": "кызматкер",
+            "ru": "офицер"
+          },
+          "definition": "polis memuru veya kolluk kuvveti görevlisi",
+          "pronunciation": "me-mur",
+          "example": "Günaydın, memur bey. Size nasıl yardımcı olabilirim?",
+          "audioFileName": null
+        }
+      ],
+      "dialogues": [
+        {
+          "id": "initial-stop-dialogue-1",
+          "title": "İlk Durdurma - Diyalog 1",
+          "exchanges": [
+            {
+              "id": "exchange-1",
+              "speaker": "Memur",
+              "text": "Günaydın. Ehliyet ve ruhsat, lütfen.",
+              "audioFileName": null
+            },
+            {
+              "id": "exchange-2",
+              "speaker": "Sürücü",
+              "text": "Günaydın, memur bey. İşte belgelerim.",
+              "audioFileName": null
+            },
+            {
+              "id": "exchange-3",
+              "speaker": "Memur",
+              "text": "Teşekkürler. Sizi neden durdurduğumu biliyor musunuz?",
+              "audioFileName": null
+            },
+            {
+              "id": "exchange-4",
+              "speaker": "Sürücü",
+              "text": "Emin değilim, memur bey. Açıklayabilir misiniz?",
+              "audioFileName": null
+            }
+          ],
+          "audioFileName": null
+        }
+      ],
+      "tips": [
+        "Ellerinizi direksiyonda görünür tutun",
+        "Açık ve saygılı konuşun",
+        "Ani hareketler yapmayın",
+        "Tüm belgelerinizi hazır tutun"
+      ],
+      "assessments": [
+        {
+          "id": "tr-initial-stop-1",
+          "type": "multiple-choice",
+          "question": "Bir memur durmanızı istediğinde ne yapmalısınız?",
+          "audioText": null,
+          "options": [
+            "Hızlanıp kaçmak",
+            "Güvenli bir şekilde yolun kenarına çekmek",
+            "Memuru görmezden gelmek",
+            "Normal şekilde sürmeye devam etmek"
+          ],
+          "correctAnswer": "Güvenli bir şekilde yolun kenarına çekmek",
+          "explanation": "Bir memur istediğinde her zaman güvenli bir şekilde durmalısınız.",
+          "difficulty": "beginner",
+          "skillTested": "practical-application",
+          "audioFileName": null
+        }
+      ],
+      "estimatedMinutes": 15,
+      "difficulty": "beginner"
+    },
+    {
+      "id": "documentation",
+      "title": "Gerekli Belgeler",
+      "description": "Aracınızda her zaman bulundurmanız gereken belgeler hakkında bilgi edinin.",
+      "vocabulary": [
+        {
+          "word": "documents",
+          "translation": {
+            "en": "documents",
+            "es": "documentos",
+            "tr": "belgeler",
+            "kg": "документтер",
+            "ru": "документы"
+          },
+          "definition": "araç kullanmak için gerekli resmi belgeler",
+          "pronunciation": "bel-ge-ler",
+          "example": "Tüm belgelerim güncel ve geçerli.",
+          "audioFileName": null
+        },
+        {
+          "word": "valid",
+          "translation": {
+            "en": "valid",
+            "es": "válido",
+            "tr": "geçerli",
+            "kg": "жарактуу",
+            "ru": "действительный"
+          },
+          "definition": "yasal güce sahip ve yürürlükte olan",
+          "pronunciation": "ge-çer-li",
+          "example": "Ehliyetim gelecek yıla kadar geçerli.",
+          "audioFileName": null
+        }
+      ],
+      "dialogues": [],
+      "tips": [
+        "Tüm belgelerinizi güncel tutun",
+        "Belgelerinizin dijital kopyasını saklayın",
+        "Son kullanma tarihlerini düzenli olarak kontrol edin"
+      ],
+      "assessments": [],
+      "estimatedMinutes": 10,
+      "difficulty": "beginner"
+    }
+  ]
+} 

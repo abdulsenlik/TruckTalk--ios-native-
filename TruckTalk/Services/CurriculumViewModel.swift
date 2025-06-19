@@ -1,5 +1,6 @@
 import Foundation
 import SwiftUI
+import Combine
 
 /// ViewModel for managing curriculum state and user interactions
 /// Provides comprehensive access to all curriculum content and user progress
@@ -18,10 +19,13 @@ class CurriculumViewModel: ObservableObject {
     @Published var filterType: QuestionType?
     @Published var showCompletedOnly = false
     @Published var showFavoritesOnly = false
+    @Published var isLoading = false
+    @Published var currentLanguage: String = "en"
     
     // MARK: - Services
     private let curriculumService = CurriculumService()
     private let languageManager = LanguageManager.shared
+    private var cancellables = Set<AnyCancellable>()
     
     // MARK: - Computed Properties
     
@@ -64,8 +68,8 @@ class CurriculumViewModel: ObservableObject {
     var filteredSections: [CurriculumSection] {
         var filtered = mainSections
         
-        if let difficulty = filterDifficulty {
-            filtered = filtered.filter { $0.difficulty == difficulty }
+        if filterDifficulty != nil {
+            filtered = filtered.filter { $0.difficulty == filterDifficulty }
         }
         
         if showCompletedOnly {
@@ -88,9 +92,9 @@ class CurriculumViewModel: ObservableObject {
             }
         }
         
-        if let difficulty = filterDifficulty {
+        if filterDifficulty != nil {
             // TODO: Implement difficulty filtering for vocabulary
-            // filtered = filtered.filter { $0.difficulty == difficulty }
+            // filtered = filtered.filter { $0.difficulty == filterDifficulty }
         }
         
         return filtered
@@ -100,8 +104,8 @@ class CurriculumViewModel: ObservableObject {
     var filteredAssessments: [AssessmentQuestion] {
         var filtered = allAssessments
         
-        if let difficulty = filterDifficulty {
-            filtered = filtered.filter { $0.difficulty == difficulty }
+        if filterDifficulty != nil {
+            filtered = filtered.filter { $0.difficulty == filterDifficulty }
         }
         
         if let skill = filterSkill {
@@ -138,10 +142,46 @@ class CurriculumViewModel: ObservableObject {
     // MARK: - Initialization
     
     init() {
+        setupObservers()
+        
         // Load curriculum data
         Task {
             await curriculumService.loadCurriculum()
         }
+    }
+    
+    // MARK: - Observers Setup
+    
+    private func setupObservers() {
+        // Observe curriculum service loading state
+        curriculumService.$isLoading
+            .receive(on: DispatchQueue.main)
+            .assign(to: \.isLoading, on: self)
+            .store(in: &cancellables)
+        
+        // Observe curriculum service language changes
+        curriculumService.$currentLanguage
+            .receive(on: DispatchQueue.main)
+            .assign(to: \.currentLanguage, on: self)
+            .store(in: &cancellables)
+        
+        // Observe curriculum changes and refresh UI
+        curriculumService.$curriculum
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] _ in
+                self?.objectWillChange.send()
+                print("🔄 CurriculumViewModel updated with new curriculum data")
+            }
+            .store(in: &cancellables)
+        
+        // Observe language manager changes
+        languageManager.$selectedLanguage
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] newLanguage in
+                self?.currentLanguage = newLanguage.rawValue
+                print("🌍 CurriculumViewModel detected language change to: \(newLanguage.rawValue)")
+            }
+            .store(in: &cancellables)
     }
     
     // MARK: - Section Management
@@ -208,6 +248,16 @@ class CurriculumViewModel: ObservableObject {
         curriculumService.playVocabularyAudio(vocabulary)
     }
     
+    /// Check if vocabulary audio is playing
+    func isVocabularyAudioPlaying(_ vocabulary: VocabularyItem) -> Bool {
+        return curriculumService.isAudioPlaying(for: vocabulary.id.uuidString)
+    }
+    
+    /// Toggle vocabulary audio playback
+    func toggleVocabularyAudio(_ vocabulary: VocabularyItem) {
+        curriculumService.toggleAudio(for: vocabulary.id.uuidString, fileName: vocabulary.audioFileName)
+    }
+    
     /// Mark vocabulary as mastered
     func markVocabularyMastered(_ vocabulary: VocabularyItem) {
         curriculumService.markVocabularyMastered(vocabulary.id.uuidString)
@@ -225,6 +275,16 @@ class CurriculumViewModel: ObservableObject {
         curriculumService.playDialogueAudio(exchange)
     }
     
+    /// Check if dialogue audio is playing
+    func isDialogueAudioPlaying(_ exchange: DialogueExchange) -> Bool {
+        return curriculumService.isAudioPlaying(for: exchange.id.uuidString)
+    }
+    
+    /// Toggle dialogue audio playback
+    func toggleDialogueAudio(_ exchange: DialogueExchange) {
+        curriculumService.toggleAudio(for: exchange.id.uuidString, fileName: exchange.audioFileName)
+    }
+    
     /// Get dialogue exchanges for selected dialogue
     var selectedDialogueExchanges: [DialogueExchange] {
         return selectedDialogue?.exchanges ?? []
@@ -240,6 +300,16 @@ class CurriculumViewModel: ObservableObject {
     /// Play audio for assessment
     func playAssessmentAudio(_ assessment: AssessmentQuestion) {
         curriculumService.playAssessmentAudio(assessment)
+    }
+    
+    /// Check if assessment audio is playing
+    func isAssessmentAudioPlaying(_ assessment: AssessmentQuestion) -> Bool {
+        return curriculumService.isAudioPlaying(for: assessment.id)
+    }
+    
+    /// Toggle assessment audio playback
+    func toggleAssessmentAudio(_ assessment: AssessmentQuestion) {
+        curriculumService.toggleAudio(for: assessment.id, fileName: assessment.audioFileName)
     }
     
     /// Submit assessment answer
@@ -378,6 +448,28 @@ class CurriculumViewModel: ObservableObject {
         case .tip:
             return randomTip as Any
         }
+    }
+    
+    // MARK: - Curriculum Loading
+    @MainActor
+    func reloadCurriculum() async {
+        await curriculumService.reloadCurriculum()
+    }
+    @MainActor
+    func loadCurriculum() async {
+        await curriculumService.loadCurriculum()
+    }
+    
+    // MARK: - Audio Manager Access
+    
+    /// Get audio manager for UI integration
+    var audioManager: AudioManager {
+        return curriculumService.audioManagerInstance
+    }
+    
+    /// Stop all audio playback
+    func stopAllAudio() {
+        curriculumService.stopAudio()
     }
 }
 

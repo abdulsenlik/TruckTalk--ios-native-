@@ -127,6 +127,7 @@ struct LessonDetailView: View {
                             translation: languageManager.localizedTranslation(for: content),
                             audioFileName: content.audioFileName,
                             isPlaying: audioManager.currentAudioId == content.id && audioManager.isPlaying,
+                            isLoading: audioManager.isLoading && audioManager.currentAudioId == content.id,
                             isFavorited: dataService.userProgress.favoritePhrases.contains(content.id),
                             isCompleted: dataService.userProgress.completedLessons.contains(content.id)
                         ) {

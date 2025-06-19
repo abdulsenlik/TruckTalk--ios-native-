@@ -16,8 +16,38 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "238"
             endingLineNumber = "238"
-            landmarkName = "LanguageManagerKey"
-            landmarkType = "14">
+            landmarkName = "Notification.Name"
+            landmarkType = "21">
+            <Locations>
+               <Location
+                  uuid = "1CCA0055-0A43-4073-AB3D-3BD53F9AE1DE - 5d4ff1e5fa721b46"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__C.NSNotificationName.languageChanged.unsafeMutableAddressor : __C.NSNotificationName"
+                  moduleName = "TruckTalk.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/senlik/TruckTalk--ios-native-/TruckTalk/Services/LanguageManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "238"
+                  endingLineNumber = "238">
+               </Location>
+               <Location
+                  uuid = "1CCA0055-0A43-4073-AB3D-3BD53F9AE1DE - 592160aba3d4ff6e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "one-time initialization function for languageChanged"
+                  moduleName = "TruckTalk.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/senlik/TruckTalk--ios-native-/TruckTalk/Services/LanguageManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "238"
+                  endingLineNumber = "238">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

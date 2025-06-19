@@ -67,6 +67,7 @@ class LanguageManager: ObservableObject {
     func changeLanguage(to language: SupportedLanguage) {
         guard language != selectedLanguage else { return }
         
+        print("🔄 Changing language from \(selectedLanguage.rawValue) to \(language.rawValue)")
         isLoading = true
         selectedLanguage = language
         
@@ -75,18 +76,21 @@ class LanguageManager: ObservableObject {
             try? await Task.sleep(nanoseconds: 500_000_000) // 0.5 seconds
             await MainActor.run {
                 isLoading = false
+                print("✅ Language change completed: \(language.rawValue)")
             }
         }
     }
     
     private func saveLanguagePreference() {
         UserDefaults.standard.set(selectedLanguage.rawValue, forKey: languageKey)
+        print("💾 Saved language preference: \(selectedLanguage.rawValue)")
     }
     
     // MARK: - Content Loading
     private func loadLocalizedContent() {
         // This will be called whenever language changes
         // Individual services will observe this and reload their content
+        print("📢 Broadcasting language change notification: \(selectedLanguage.rawValue)")
         NotificationCenter.default.post(name: .languageChanged, object: selectedLanguage)
     }
     
@@ -235,9 +239,9 @@ extension Notification.Name {
 }
 
 // MARK: - SwiftUI Environment
-@MainActor
+@preconcurrency
 struct LanguageManagerKey: EnvironmentKey {
-    @preconcurrency
+    @MainActor
     static let defaultValue = LanguageManager.shared
 }
 

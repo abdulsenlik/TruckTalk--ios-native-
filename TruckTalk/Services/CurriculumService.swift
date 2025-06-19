@@ -10,38 +10,137 @@ class CurriculumService: ObservableObject {
     @Published var isLoading = false
     @Published var curriculum: TrafficStopCourse?
     @Published var lastError: Error?
+    @Published var currentLanguage: String = "en"
+    @Published var error: CurriculumError?
     
     // MARK: - Private Properties
     private let languageManager = LanguageManager.shared
+    private var languageChangeObserver: NSObjectProtocol?
+    private let audioManager = AudioManager()
     
     // MARK: - Initialization
     init() {
+        setupLanguageChangeObserver()
         Task {
             await loadCurriculum()
         }
     }
     
+    deinit {
+        if let observer = languageChangeObserver {
+            NotificationCenter.default.removeObserver(observer)
+        }
+    }
+    
+    // MARK: - Language Change Handling
+    
+    private func setupLanguageChangeObserver() {
+        languageChangeObserver = NotificationCenter.default.addObserver(
+            forName: .languageChanged,
+            object: nil,
+            queue: .main
+        ) { [weak self] notification in
+            guard let self = self,
+                  let newLanguage = notification.object as? SupportedLanguage else { return }
+            
+            print("🔄 Language changed to: \(newLanguage.rawValue)")
+            
+            Task { @MainActor in
+                self.currentLanguage = newLanguage.rawValue
+                await self.loadCurriculum()
+            }
+        }
+    }
+    
     // MARK: - Public API
     
-    /// Load the complete curriculum from JSON
+    /// Load the complete curriculum from JSON with language-specific files and fallback
     func loadCurriculum() async {
         isLoading = true
         defer { isLoading = false }
         
         do {
-            guard let url = Bundle.main.url(forResource: "curriculum_complete", withExtension: "json") else {
-                throw CurriculumError.fileNotFound
-            }
+            let curriculum = try await loadCurriculumWithFallback()
+            self.curriculum = curriculum
             
-            let data = try Data(contentsOf: url)
-            let decoder = JSONDecoder()
-            curriculum = try decoder.decode(TrafficStopCourse.self, from: data)
-            
-            print("✅ Successfully loaded curriculum with \(curriculum?.sections.count ?? 0) sections")
+            print("✅ Successfully loaded curriculum for language '\(currentLanguage)'")
+            print("📊 Found \(curriculum.sections.count) sections")
+            print("📚 Total vocabulary: \(curriculum.sections.flatMap { $0.vocabulary }.count)")
+            print("💬 Total dialogues: \(curriculum.sections.flatMap { $0.dialogues }.count)")
+            print("📝 Total assessments: \(curriculum.sections.flatMap { $0.assessments }.count)")
             
         } catch {
             print("❌ Failed to load curriculum: \(error)")
             lastError = error
+        }
+    }
+    
+    /// Manually reload curriculum (useful for testing)
+    func reloadCurriculum() async {
+        print("🔄 Manually reloading curriculum...")
+        await loadCurriculum()
+    }
+    
+    /// Load curriculum with language-specific files and fallback to English
+    private func loadCurriculumWithFallback() async throws -> TrafficStopCourse {
+        let currentLang = languageManager.currentLanguage.rawValue
+        
+        // Try language-specific curriculum file first
+        if let curriculum = try await loadCurriculumForLanguage(currentLang) {
+            print("🌍 Loaded curriculum for language: \(currentLang)")
+            return curriculum
+        }
+        
+        // Fallback to English if current language is not English
+        if currentLang != "en" {
+            print("⚠️ No curriculum found for language '\(currentLang)', falling back to English")
+            if let englishCurriculum = try await loadCurriculumForLanguage("en") {
+                print("🇺🇸 Loaded English fallback curriculum")
+                return englishCurriculum
+            }
+        }
+        
+        // Final fallback to the complete curriculum file
+        print("⚠️ No language-specific curriculum found, using complete curriculum file")
+        return try await loadCompleteCurriculum()
+    }
+    
+    /// Load curriculum for a specific language
+    private func loadCurriculumForLanguage(_ language: String) async throws -> TrafficStopCourse? {
+        let filename = "curriculum_\(language)"
+        
+        guard let url = Bundle.main.url(forResource: filename, withExtension: "json") else {
+            print("📁 No curriculum file found: \(filename).json")
+            return nil
+        }
+        
+        let data = try Data(contentsOf: url)
+        let decoder = JSONDecoder()
+        do {
+            let curriculum = try decoder.decode(TrafficStopCourse.self, from: data)
+            print("📖 Loaded curriculum file: \(filename).json")
+            return curriculum
+        } catch {
+            print("❌ Failed to decode curriculum file \(filename).json: \(error)")
+            return nil
+        }
+    }
+    
+    /// Load the complete curriculum file as final fallback
+    private func loadCompleteCurriculum() async throws -> TrafficStopCourse {
+        guard let url = Bundle.main.url(forResource: "curriculum_complete", withExtension: "json") else {
+            throw CurriculumError.fileNotFound
+        }
+        
+        let data = try Data(contentsOf: url)
+        let decoder = JSONDecoder()
+        do {
+            let curriculum = try decoder.decode(TrafficStopCourse.self, from: data)
+            print("📖 Loaded complete curriculum file: curriculum_complete.json")
+            return curriculum
+        } catch {
+            print("❌ Failed to decode curriculum_complete.json: \(error)")
+            throw error
         }
     }
     
@@ -198,24 +297,66 @@ class CurriculumService: ObservableObject {
         print("📝 Marked assessment \(assessmentId) as completed with score \(score)")
     }
     
-    // MARK: - Audio Management (Placeholder for future implementation)
+    // MARK: - Audio Management
     
     /// Play audio for vocabulary item
     func playVocabularyAudio(_ vocabulary: VocabularyItem) {
-        // TODO: Implement audio playback
-        print("🔊 Playing audio for vocabulary: \(vocabulary.word)")
+        if let audioFileName = vocabulary.audioFileName {
+            audioManager.playAudio(fileName: audioFileName, audioId: vocabulary.id.uuidString)
+        } else {
+            // Fallback to mock audio for testing
+            audioManager.playAudio(fileName: vocabulary.word.lowercased().replacingOccurrences(of: " ", with: "_"), audioId: vocabulary.id.uuidString)
+        }
     }
     
     /// Play audio for dialogue exchange
     func playDialogueAudio(_ exchange: DialogueExchange) {
-        // TODO: Implement audio playback
-        print("🔊 Playing audio for dialogue exchange")
+        if let audioFileName = exchange.audioFileName {
+            audioManager.playAudio(fileName: audioFileName, audioId: exchange.id.uuidString)
+        } else {
+            // Fallback to mock audio for testing
+            audioManager.playAudio(fileName: "dialogue_\(exchange.id.uuidString.prefix(8))", audioId: exchange.id.uuidString)
+        }
     }
     
     /// Play audio for assessment question
     func playAssessmentAudio(_ assessment: AssessmentQuestion) {
-        // TODO: Implement audio playback
-        print("🔊 Playing audio for assessment: \(assessment.id)")
+        if let audioFileName = assessment.audioFileName {
+            audioManager.playAudio(fileName: audioFileName, audioId: assessment.id)
+        } else {
+            // Fallback to mock audio for testing
+            audioManager.playAudio(fileName: "assessment_\(assessment.id.prefix(8))", audioId: assessment.id)
+        }
+    }
+    
+    /// Get audio manager for UI integration
+    var audioManagerInstance: AudioManager {
+        return audioManager
+    }
+    
+    /// Check if audio is currently playing for a specific item
+    func isAudioPlaying(for audioId: String) -> Bool {
+        return audioManager.currentAudioId == audioId && audioManager.isPlaying
+    }
+    
+    /// Stop current audio playback
+    func stopAudio() {
+        audioManager.stopAudio()
+    }
+    
+    /// Toggle audio playback for a specific item
+    func toggleAudio(for audioId: String, fileName: String?) {
+        if audioManager.currentAudioId == audioId && audioManager.isPlaying {
+            audioManager.pauseAudio()
+        } else if audioManager.currentAudioId == audioId && !audioManager.isPlaying {
+            audioManager.resumeAudio()
+        } else {
+            if let fileName = fileName {
+                audioManager.playAudio(fileName: fileName, audioId: audioId)
+            } else {
+                audioManager.playAudio(fileName: audioId, audioId: audioId)
+            }
+        }
     }
 }
 

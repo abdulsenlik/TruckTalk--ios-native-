@@ -5,6 +5,7 @@ struct AudioCard: View {
     let translation: String?
     let audioFileName: String?
     let isPlaying: Bool
+    let isLoading: Bool
     let isFavorited: Bool
     let isCompleted: Bool
     let onPlayTap: () -> Void
@@ -56,10 +57,16 @@ struct AudioCard: View {
                 // Play Button
                 Button(action: onPlayTap) {
                     HStack(spacing: 8) {
-                        Image(systemName: isPlaying ? "pause.fill" : "play.fill")
-                            .font(.headline)
+                        if isLoading {
+                            ProgressView()
+                                .scaleEffect(0.8)
+                                .foregroundColor(.white)
+                        } else {
+                            Image(systemName: isPlaying ? "pause.fill" : "play.fill")
+                                .font(.headline)
+                        }
                         
-                        Text(isPlaying ? "Playing..." : "Play Audio")
+                        Text(isLoading ? "Loading..." : (isPlaying ? "Playing..." : "Play Audio"))
                             .font(.subheadline)
                             .fontWeight(.medium)
                     }
@@ -68,10 +75,10 @@ struct AudioCard: View {
                     .padding(.vertical, 10)
                     .background(
                         RoundedRectangle(cornerRadius: 8)
-                            .fill(isPlaying ? Color.orange : Color.accentColor)
+                            .fill(buttonBackgroundColor)
                     )
                 }
-                .disabled(audioFileName == nil)
+                .disabled(audioFileName == nil || isLoading)
                 .accessibilityLabel(isPlaying ? "Pause audio" : "Play audio")
                 
                 Spacer()
@@ -118,6 +125,16 @@ struct AudioCard: View {
             Color(.systemGray6) : 
             Color(.systemBackground)
     }
+    
+    private var buttonBackgroundColor: Color {
+        if isLoading {
+            return Color.gray
+        } else if isPlaying {
+            return Color.orange
+        } else {
+            return Color.accentColor
+        }
+    }
 }
 
 #Preview {
@@ -127,6 +144,7 @@ struct AudioCard: View {
             translation: "Hola, ¿cómo estás hoy?",
             audioFileName: "hello_greeting",
             isPlaying: false,
+            isLoading: false,
             isFavorited: true,
             isCompleted: false,
             onPlayTap: {},
@@ -139,8 +157,22 @@ struct AudioCard: View {
             translation: "Necesito ayuda médica. Por favor llame al 911.",
             audioFileName: "medical_help",
             isPlaying: true,
+            isLoading: false,
             isFavorited: false,
             isCompleted: true,
+            onPlayTap: {},
+            onFavoriteTap: {},
+            onCompleteTap: {}
+        )
+        
+        AudioCard(
+            englishText: "Loading audio example...",
+            translation: "Ejemplo de carga de audio...",
+            audioFileName: "loading_example",
+            isPlaying: false,
+            isLoading: true,
+            isFavorited: false,
+            isCompleted: false,
             onPlayTap: {},
             onFavoriteTap: {},
             onCompleteTap: {}

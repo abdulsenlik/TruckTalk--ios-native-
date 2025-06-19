@@ -1,0 +1,187 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2024-01-15",
+  "sections": [
+    {
+      "id": "initial-stop",
+      "title": "Parada de Tráfico Inicial",
+      "description": "Frases y vocabulario esenciales para cuando un oficial te detiene por primera vez.",
+      "vocabulary": [
+        {
+          "word": "license",
+          "translation": {
+            "en": "license",
+            "es": "licencia",
+            "tr": "ehliyet",
+            "kg": "айдоочунун күбөлүгү",
+            "ru": "водительские права"
+          },
+          "definition": "documento oficial que te permite conducir",
+          "pronunciation": "li-SEN-sia",
+          "example": "Oficial, aquí está mi licencia de conducir.",
+          "audioFileName": null
+        },
+        {
+          "word": "registration",
+          "translation": {
+            "en": "registration",
+            "es": "registro",
+            "tr": "ruhsat",
+            "kg": "каттоо күбөлүгү",
+            "ru": "регистрация"
+          },
+          "definition": "documento que muestra la propiedad del vehículo",
+          "pronunciation": "re-gis-TRO",
+          "example": "Mi registro del vehículo está en la guantera.",
+          "audioFileName": null
+        },
+        {
+          "word": "insurance",
+          "translation": {
+            "en": "insurance",
+            "es": "seguro",
+            "tr": "sigorta",
+            "kg": "камсыздандыруу",
+            "ru": "страховка"
+          },
+          "definition": "protección contra pérdidas financieras",
+          "pronunciation": "se-GU-ro",
+          "example": "Tengo seguro actual para este camión.",
+          "audioFileName": null
+        },
+        {
+          "word": "pull over",
+          "translation": {
+            "en": "pull over",
+            "es": "detenerse",
+            "tr": "kenara çekmek",
+            "kg": "четке чыгуу",
+            "ru": "съехать на обочину"
+          },
+          "definition": "mover tu vehículo al lado de la carretera",
+          "pronunciation": "de-te-NER-se",
+          "example": "Me detendré en el arcén derecho.",
+          "audioFileName": null
+        },
+        {
+          "word": "officer",
+          "translation": {
+            "en": "officer",
+            "es": "oficial",
+            "tr": "memur",
+            "kg": "кызматкер",
+            "ru": "офицер"
+          },
+          "definition": "un oficial de policía o funcionario de la ley",
+          "pronunciation": "o-fi-CIAL",
+          "example": "Buenos días, oficial. ¿Cómo puedo ayudarle?",
+          "audioFileName": null
+        }
+      ],
+      "dialogues": [
+        {
+          "id": "initial-stop-dialogue-1",
+          "title": "Parada Inicial - Diálogo 1",
+          "exchanges": [
+            {
+              "id": "exchange-1",
+              "speaker": "Oficial",
+              "text": "Buenos días. Licencia y registro, por favor.",
+              "audioFileName": null
+            },
+            {
+              "id": "exchange-2",
+              "speaker": "Conductor",
+              "text": "Buenos días, oficial. Aquí están mis documentos.",
+              "audioFileName": null
+            },
+            {
+              "id": "exchange-3",
+              "speaker": "Oficial",
+              "text": "Gracias. ¿Sabe por qué lo detuve?",
+              "audioFileName": null
+            },
+            {
+              "id": "exchange-4",
+              "speaker": "Conductor",
+              "text": "No estoy seguro, oficial. ¿Puede explicármelo?",
+              "audioFileName": null
+            }
+          ],
+          "audioFileName": null
+        }
+      ],
+      "tips": [
+        "Mantén las manos visibles en el volante",
+        "Habla claramente y con respeto",
+        "No hagas movimientos bruscos",
+        "Ten todos los documentos listos"
+      ],
+      "assessments": [
+        {
+          "id": "es-initial-stop-1",
+          "type": "multiple-choice",
+          "question": "¿Qué debes hacer cuando un oficial te pide que te detengas?",
+          "audioText": null,
+          "options": [
+            "Acelerar y huir",
+            "Detenerte de manera segura al lado de la carretera",
+            "Ignorar al oficial",
+            "Continuar conduciendo normalmente"
+          ],
+          "correctAnswer": "Detenerte de manera segura al lado de la carretera",
+          "explanation": "Siempre debes detenerte de manera segura cuando un oficial te lo indique.",
+          "difficulty": "beginner",
+          "skillTested": "practical-application",
+          "audioFileName": null
+        }
+      ],
+      "estimatedMinutes": 15,
+      "difficulty": "beginner"
+    },
+    {
+      "id": "documentation",
+      "title": "Documentación Requerida",
+      "description": "Aprende sobre los documentos que debes tener siempre en tu vehículo.",
+      "vocabulary": [
+        {
+          "word": "documents",
+          "translation": {
+            "en": "documents",
+            "es": "documentos",
+            "tr": "belgeler",
+            "kg": "документтер",
+            "ru": "документы"
+          },
+          "definition": "papeles oficiales requeridos para conducir",
+          "pronunciation": "do-cu-MEN-tos",
+          "example": "Todos mis documentos están actualizados y válidos.",
+          "audioFileName": null
+        },
+        {
+          "word": "valid",
+          "translation": {
+            "en": "valid",
+            "es": "válido",
+            "tr": "geçerli",
+            "kg": "жарактуу",
+            "ru": "действительный"
+          },
+          "definition": "que tiene fuerza legal y está en vigor",
+          "pronunciation": "VA-li-do",
+          "example": "Mi licencia es válida hasta el próximo año.",
+          "audioFileName": null
+        }
+      ],
+      "dialogues": [],
+      "tips": [
+        "Mantén todos los documentos actualizados",
+        "Guarda una copia digital de tus documentos",
+        "Revisa las fechas de vencimiento regularmente"
+      ],
+      "assessments": [],
+      "estimatedMinutes": 10,
+      "difficulty": "beginner"
+    }
+  ]
+} 

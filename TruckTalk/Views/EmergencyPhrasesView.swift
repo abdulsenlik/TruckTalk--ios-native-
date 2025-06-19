@@ -184,6 +184,7 @@ struct EmergencyPhrasesView: View {
             translation: phrase.localizedTranslation(),
             audioFileName: phrase.audioFileName,
             isPlaying: audioManager.currentAudioId == phrase.id && audioManager.isPlaying,
+            isLoading: audioManager.isLoading && audioManager.currentAudioId == phrase.id,
             isFavorited: dataService.userProgress.favoritePhrases.contains(phrase.id),
             isCompleted: false
         ) {
