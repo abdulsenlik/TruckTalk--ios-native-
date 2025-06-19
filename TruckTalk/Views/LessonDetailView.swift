@@ -202,4 +202,5 @@ struct LessonDetailView: View {
         dataService: DataService()
     )
     .environmentObject(LanguageManager.shared)
+    .environmentObject(DataService())
 } 

@@ -1,0 +1,1278 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2024-01-15",
+  "sections": [
+    {
+      "id": "initial-stop",
+      "title": "Initial Traffic Stop",
+      "description": "Essential phrases and vocabulary for when an officer first pulls you over.",
+      "vocabulary": [
+        {
+          "word": "license",
+          "translation": {
+            "tr": "ehliyet",
+            "kg": "айдоочунун күбөлүгү",
+            "ru": "водительские права"
+          },
+          "definition": "official document permitting you to drive",
+          "pronunciation": "LAI-suhns",
+          "example": "Officer, here is my driver's license.",
+          "audioFileName": null
+        },
+        {
+          "word": "registration",
+          "translation": {
+            "tr": "ruhsat",
+            "kg": "каттоо күбөлүгү",
+            "ru": "регистрация"
+          },
+          "definition": "document showing vehicle ownership",
+          "pronunciation": "rej-uh-STRAY-shuhn",
+          "example": "My vehicle registration is in the glove box.",
+          "audioFileName": null
+        },
+        {
+          "word": "insurance",
+          "translation": {
+            "tr": "sigorta",
+            "kg": "камсыздандыруу",
+            "ru": "страховка"
+          },
+          "definition": "protection against financial loss",
+          "pronunciation": "in-SHOOR-uhns",
+          "example": "I have current insurance for this truck.",
+          "audioFileName": null
+        },
+        {
+          "word": "pull over",
+          "translation": {
+            "tr": "kenara çekmek",
+            "kg": "четке чыгуу",
+            "ru": "съехать на обочину"
+          },
+          "definition": "to move your vehicle to the side of the road",
+          "pronunciation": "POOL OH-ver",
+          "example": "I will pull over to the right shoulder.",
+          "audioFileName": null
+        },
+        {
+          "word": "officer",
+          "translation": {
+            "tr": "memur",
+            "kg": "кызматкер",
+            "ru": "офицер"
+          },
+          "definition": "a police officer or law enforcement official",
+          "pronunciation": "AW-fi-ser",
+          "example": "Good morning, officer. How can I help you?",
+          "audioFileName": null
+        },
+        {
+          "word": "speed limit",
+          "translation": {
+            "tr": "hız sınırı",
+            "kg": "ылдамдык чеги",
+            "ru": "ограничение скорости"
+          },
+          "definition": "maximum legal speed",
+          "pronunciation": "SPEED LIM-it",
+          "example": "What is the speed limit on this highway?",
+          "audioFileName": null
+        },
+        {
+          "word": "speeding",
+          "translation": {
+            "tr": "hız aşımı",
+            "kg": "ылдамдыкты арттыруу",
+            "ru": "превышение скорости"
+          },
+          "definition": "driving faster than the legal speed limit",
+          "pronunciation": "SPEED-ing",
+          "example": "I apologize for speeding, officer.",
+          "audioFileName": null
+        },
+        {
+          "word": "traffic violation",
+          "translation": {
+            "tr": "trafik ihlali",
+            "kg": "жол эрежелерин бузуу",
+            "ru": "нарушение правил дорожного движения"
+          },
+          "definition": "breaking a traffic law",
+          "pronunciation": "TRAF-ik vahy-uh-LAY-shuhn",
+          "example": "This is my first traffic violation this year.",
+          "audioFileName": null
+        },
+        {
+          "word": "documents",
+          "translation": {
+            "tr": "belgeler",
+            "kg": "документтер",
+            "ru": "документы"
+          },
+          "definition": "official papers required for driving",
+          "pronunciation": "DOK-yuh-muhnts",
+          "example": "All my documents are current and valid.",
+          "audioFileName": null
+        },
+        {
+          "word": "hands visible",
+          "translation": {
+            "tr": "eller görünür",
+            "kg": "колдор көрүнүп турат",
+            "ru": "руки на виду"
+          },
+          "definition": "keeping hands where officer can see them",
+          "pronunciation": "HANDS VIZ-uh-buhl",
+          "example": "I will keep my hands visible on the steering wheel.",
+          "audioFileName": null
+        },
+        {
+          "word": "steering wheel",
+          "translation": {
+            "tr": "direksiyon",
+            "kg": "руль",
+            "ru": "руль"
+          },
+          "definition": "circular control device for directing vehicle",
+          "pronunciation": "STEER-ing WHEEL",
+          "example": "My hands are on the steering wheel, officer.",
+          "audioFileName": null
+        },
+        {
+          "word": "apologize",
+          "translation": {
+            "tr": "özür dilemek",
+            "kg": "кечирим сурануу",
+            "ru": "извиняться"
+          },
+          "definition": "to express regret for a mistake",
+          "pronunciation": "uh-POL-uh-jahyz",
+          "example": "I apologize for my mistake, officer.",
+          "audioFileName": null
+        },
+        {
+          "word": "understand",
+          "translation": {
+            "tr": "anlamak",
+            "kg": "түшүнүү",
+            "ru": "понимать"
+          },
+          "definition": "to comprehend what is being said",
+          "pronunciation": "uhn-der-STAND",
+          "example": "I understand what you are saying, officer.",
+          "audioFileName": null
+        },
+        {
+          "word": "slowly",
+          "translation": {
+            "tr": "yavaşça",
+            "kg": "жай эле",
+            "ru": "медленно"
+          },
+          "definition": "at a reduced speed or pace",
+          "pronunciation": "SLOH-lee",
+          "example": "I will move slowly to get my wallet.",
+          "audioFileName": null
+        },
+        {
+          "word": "wallet",
+          "translation": {
+            "tr": "cüzdan",
+            "kg": "капчык",
+            "ru": "кошелек"
+          },
+          "definition": "small case for carrying money and cards",
+          "pronunciation": "WAWL-it",
+          "example": "My license is in my wallet in my back pocket.",
+          "audioFileName": null
+        },
+        {
+          "word": "glove box",
+          "translation": {
+            "tr": "torpido gözü",
+            "kg": "кол кутусу",
+            "ru": "бардачок"
+          },
+          "definition": "storage compartment in vehicle dashboard",
+          "pronunciation": "GLUHV BOKS",
+          "example": "The registration is in the glove box.",
+          "audioFileName": null
+        },
+        {
+          "word": "commercial vehicle",
+          "translation": {
+            "tr": "ticari araç",
+            "kg": "коммерциялык унаа",
+            "ru": "коммерческий транспорт"
+          },
+          "definition": "vehicle used for business purposes",
+          "pronunciation": "kuh-MUR-shuhl VEE-i-kuhl",
+          "example": "This is a commercial vehicle for cargo transport.",
+          "audioFileName": null
+        },
+        {
+          "word": "shoulder",
+          "translation": {
+            "tr": "banket",
+            "kg": "жол четинде",
+            "ru": "обочина"
+          },
+          "definition": "edge of the road for emergency stops",
+          "pronunciation": "SHOHL-der",
+          "example": "I pulled over to the shoulder safely.",
+          "audioFileName": null
+        },
+        {
+          "word": "emergency flashers",
+          "translation": {
+            "tr": "dörtlü flaşör",
+            "kg": "эскертүү жарыктары",
+            "ru": "аварийная сигнализация"
+          },
+          "definition": "warning lights that flash on all sides",
+          "pronunciation": "ih-MUR-juhn-see FLASH-erz",
+          "example": "I turned on my emergency flashers when I stopped.",
+          "audioFileName": null
+        },
+        {
+          "word": "cooperate",
+          "translation": {
+            "tr": "işbirliği yapmak",
+            "kg": "кызматташуу",
+            "ru": "сотрудничать"
+          },
+          "definition": "to work together and follow instructions",
+          "pronunciation": "koh-OP-uh-rayt",
+          "example": "I want to cooperate fully with your investigation.",
+          "audioFileName": null
+        }
+      ],
+      "dialogues": [
+        {
+          "title": "Being Pulled Over - Polite Officer, Nervous Driver",
+          "exchanges": [
+            {
+              "speaker": "Officer",
+              "text": "Good afternoon. I need to see your license, registration, and insurance please.",
+              "audioFileName": null
+            },
+            {
+              "speaker": "Driver",
+              "text": "Good afternoon, officer. Yes, of course. My hands are on the steering wheel. May I reach for my documents?",
+              "audioFileName": null
+            },
+            {
+              "speaker": "Officer",
+              "text": "Yes, go ahead slowly. Take your time.",
+              "audioFileName": null
+            },
+            {
+              "speaker": "Driver",
+              "text": "Thank you, officer. Here is my CDL, insurance card, and registration. I'm sorry, my English is not perfect.",
+              "audioFileName": null
+            },
+            {
+              "speaker": "Officer",
+              "text": "That's okay, you're doing fine. Do you know why I pulled you over today?",
+              "audioFileName": null
+            },
+            {
+              "speaker": "Driver",
+              "text": "No, officer. I'm not sure. Did I do something wrong? I was trying to be very careful.",
+              "audioFileName": null
+            },
+            {
+              "speaker": "Officer",
+              "text": "You were traveling 65 miles per hour in a 55 mile per hour zone. The speed limit dropped back there at the construction sign.",
+              "audioFileName": null
+            },
+            {
+              "speaker": "Driver",
+              "text": "Oh no, I'm very sorry, officer. I have a delivery deadline today and I was worried about being late. But I should have been more careful with the speed limit. This is my mistake.",
+              "audioFileName": null
+            }
+          ],
+          "audioFileName": null
+        },
+        {
+          "title": "Being Pulled Over - Formal Officer, Confident Driver",
+          "exchanges": [
+            {
+              "speaker": "Officer",
+              "text": "Sir, I'm Officer Martinez with the State Police. Please provide your commercial driver's license, vehicle registration, and proof of insurance.",
+              "audioFileName": null
+            },
+            {
+              "speaker": "Driver",
+              "text": "Good evening, Officer Martinez. Here are my documents. My CDL, registration, and current insurance card. Is there a specific reason for this stop?",
+              "audioFileName": null
+            },
+            {
+              "speaker": "Officer",
+              "text": "I clocked you at 68 miles per hour in a posted 55 mile per hour zone. Are you aware of the speed limit on this stretch of highway?",
+              "audioFileName": null
+            },
+            {
+              "speaker": "Driver",
+              "text": "Yes, officer, I am aware it's 55. I apologize - I was maintaining pace with traffic flow, but I understand that doesn't excuse exceeding the limit. I should have been more attentive.",
+              "audioFileName": null
+            },
+            {
+              "speaker": "Officer",
+              "text": "Traffic flow is not a legal defense for speeding. What's your destination and purpose of travel?",
+              "audioFileName": null
+            },
+            {
+              "speaker": "Driver",
+              "text": "I'm delivering manufactured goods to a distribution center in Columbus. I have the bill of lading here if you need to see it. I've been driving this route for three years without any violations.",
+              "audioFileName": null
+            },
+            {
+              "speaker": "Officer",
+              "text": "That won't be necessary. Given your clean record, I'm issuing a written warning today. Please be more mindful of posted speed limits, especially in commercial vehicles.",
+              "audioFileName": null
+            },
+            {
+              "speaker": "Driver",
+              "text": "Thank you, officer. I appreciate the warning and will definitely be more careful. I understand the responsibility that comes with operating a commercial vehicle.",
+              "audioFileName": null
+            }
+          ],
+          "audioFileName": null
+        },
+        {
+          "title": "Being Pulled Over - Stern Officer, Confused Driver",
+          "exchanges": [
+            {
+              "speaker": "Officer",
+              "text": "Turn off your engine and step out of the vehicle. Keep your hands visible at all times.",
+              "audioFileName": null
+            },
+            {
+              "speaker": "Driver",
+              "text": "Officer, I... I don't understand. What did I do wrong? Should I get out? I'm sorry, I'm confused.",
+              "audioFileName": null
+            },
+            {
+              "speaker": "Officer",
+              "text": "You were weaving between lanes and driving erratically. Have you been drinking or taking any medications today?",
+              "audioFileName": null
+            },
+            {
+              "speaker": "Driver",
+              "text": "No, no alcohol, officer! I don't drink. I was... I was looking at my GPS because I got lost. I know that was wrong. I'm very sorry.",
+              "audioFileName": null
+            },
+            {
+              "speaker": "Officer",
+              "text": "Looking at GPS while driving is distracted driving. You could have caused a serious accident. How long have you been driving commercially?",
+              "audioFileName": null
+            },
+            {
+              "speaker": "Driver",
+              "text": "Only six months, officer. I'm still learning. I know I made a mistake. I should have pulled over to check the GPS. I was scared I would be late for delivery.",
+              "audioFileName": null
+            },
+            {
+              "speaker": "Officer",
+              "text": "Being late is not worth risking lives. I'm issuing you a citation for distracted driving. You need to attend a safety course within 30 days.",
+              "audioFileName": null
+            },
+            {
+              "speaker": "Driver",
+              "text": "Yes, officer. I understand. I will take the course. I promise to be more careful. Thank you for teaching me this important lesson about safety.",
+              "audioFileName": null
+            }
+          ],
+          "audioFileName": null
+        }
+      ],
+      "tips": [
+        "Always keep your hands visible on the steering wheel until instructed otherwise",
+        "Address the officer as 'officer' or 'sir/ma'am'",
+        "Move slowly when reaching for documents",
+        "Inform the officer before reaching for documents: 'My license is in my wallet. May I reach for it?'",
+        "Keep your vehicle registration and insurance card easily accessible",
+        "Turn on your emergency flashers when pulling over",
+        "Pull over to the right shoulder when possible",
+        "Stay in your vehicle unless instructed to exit",
+        "Be honest about any language difficulties",
+        "Apologize if you made a mistake, but don't admit guilt unnecessarily"
+      ],
+      "assessments": [
+        {
+          "id": "initial-stop-q1",
+          "type": "multiple-choice",
+          "question": "What should you do first when pulled over by police?",
+          "audioText": null,
+          "options": [
+            "Immediately reach for your documents",
+            "Keep your hands visible on the steering wheel",
+            "Get out of the vehicle",
+            "Turn off the engine and exit"
+          ],
+          "correctAnswer": "Keep your hands visible on the steering wheel",
+          "explanation": "Always keep your hands visible on the steering wheel until the officer instructs you otherwise. This shows you are not a threat.",
+          "difficulty": "beginner",
+          "skillTested": "practical-application",
+          "audioFileName": null
+        },
+        {
+          "id": "initial-stop-q2",
+          "type": "multiple-choice",
+          "question": "Which documents should you provide to the officer?",
+          "audioText": null,
+          "options": [
+            "Only your driver's license",
+            "License, registration, and insurance",
+            "Just your insurance card",
+            "Only your vehicle registration"
+          ],
+          "correctAnswer": "License, registration, and insurance",
+          "explanation": "You must provide your driver's license, vehicle registration, and proof of insurance when requested by law enforcement.",
+          "difficulty": "beginner",
+          "skillTested": "vocabulary",
+          "audioFileName": null
+        },
+        {
+          "id": "initial-stop-q3",
+          "type": "true-false",
+          "question": "You should apologize immediately if you think you made a mistake.",
+          "audioText": null,
+          "options": null,
+          "correctAnswer": "True",
+          "explanation": "It's appropriate to apologize if you believe you made a mistake, but be careful not to admit guilt unnecessarily.",
+          "difficulty": "intermediate",
+          "skillTested": "context",
+          "audioFileName": null
+        },
+        {
+          "id": "initial-stop-q4",
+          "type": "multiple-choice",
+          "question": "What does 'pull over' mean?",
+          "audioText": null,
+          "options": [
+            "To stop at a red light",
+            "To move your vehicle to the side of the road",
+            "To park in a parking lot",
+            "To turn around"
+          ],
+          "correctAnswer": "To move your vehicle to the side of the road",
+          "explanation": "To pull over means to move your vehicle to the side of the road, typically in response to police lights or sirens.",
+          "difficulty": "beginner",
+          "skillTested": "vocabulary",
+          "audioFileName": null
+        },
+        {
+          "id": "initial-stop-q5",
+          "type": "scenario-response",
+          "question": "An officer asks for your documents. What should you say before reaching for them?",
+          "audioText": null,
+          "options": null,
+          "correctAnswer": "May I reach for my documents?",
+          "explanation": "Always inform the officer before reaching for documents and ask permission to move your hands from the steering wheel.",
+          "difficulty": "intermediate",
+          "skillTested": "practical-application",
+          "audioFileName": null
+        }
+      ],
+      "estimatedMinutes": 45,
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "document-check",
+      "title": "Document Check",
+      "description": "Understanding and providing the required documents during a traffic stop.",
+      "vocabulary": [
+        {
+          "word": "CDL",
+          "translation": {
+            "tr": "ticari ehliyet",
+            "kg": "коммерциялык айдоочунун күбөлүгү",
+            "ru": "коммерческие водительские права"
+          },
+          "definition": "Commercial Driver's License - special license for commercial vehicles",
+          "pronunciation": "SEE-DEE-EL",
+          "example": "Here is my CDL, officer.",
+          "audioFileName": null
+        },
+        {
+          "word": "proof of insurance",
+          "translation": {
+            "tr": "sigorta kanıtı",
+            "kg": "камсыздандыруунун далили",
+            "ru": "доказательство страховки"
+          },
+          "definition": "document showing you have valid insurance coverage",
+          "pronunciation": "PROOF uhv in-SHOOR-uhns",
+          "example": "I have proof of insurance in my glove box.",
+          "audioFileName": null
+        },
+        {
+          "word": "expired",
+          "translation": {
+            "tr": "süresi dolmuş",
+            "kg": "мөөнөтү өткөн",
+            "ru": "истекший"
+          },
+          "definition": "no longer valid due to passing the expiration date",
+          "pronunciation": "ik-SPYRD",
+          "example": "I need to renew my license because it's expired.",
+          "audioFileName": null
+        },
+        {
+          "word": "valid",
+          "translation": {
+            "tr": "geçerli",
+            "kg": "жарактуу",
+            "ru": "действительный"
+          },
+          "definition": "legally acceptable and not expired",
+          "pronunciation": "VAL-id",
+          "example": "My documents are all valid and current.",
+          "audioFileName": null
+        },
+        {
+          "word": "renew",
+          "translation": {
+            "tr": "yenilemek",
+            "kg": "жаңыртуу",
+            "ru": "обновлять"
+          },
+          "definition": "to extend the validity period of a document",
+          "pronunciation": "rih-NOO",
+          "example": "I need to renew my registration next month.",
+          "audioFileName": null
+        },
+        {
+          "word": "endorsement",
+          "translation": {
+            "tr": "onay",
+            "kg": "бекитүү",
+            "ru": "одобрение"
+          },
+          "definition": "additional authorization on your license for specific vehicle types",
+          "pronunciation": "en-DORS-muhnt",
+          "example": "My CDL has a hazmat endorsement.",
+          "audioFileName": null
+        },
+        {
+          "word": "restriction",
+          "translation": {
+            "tr": "kısıtlama",
+            "kg": "чектем",
+            "ru": "ограничение"
+          },
+          "definition": "limitation on your license for certain conditions",
+          "pronunciation": "rih-STRIK-shuhn",
+          "example": "I have a restriction requiring corrective lenses.",
+          "audioFileName": null
+        },
+        {
+          "word": "address",
+          "translation": {
+            "tr": "adres",
+            "kg": "дарек",
+            "ru": "адрес"
+          },
+          "definition": "your place of residence",
+          "pronunciation": "uh-DRES",
+          "example": "My address is 123 Main Street, Anytown, USA.",
+          "audioFileName": null
+        },
+        {
+          "word": "date of birth",
+          "translation": {
+            "tr": "doğum tarihi",
+            "kg": "туулган күнү",
+            "ru": "дата рождения"
+          },
+          "definition": "the day you were born",
+          "pronunciation": "DAYT uhv BURTH",
+          "example": "My date of birth is January 15, 1985.",
+          "audioFileName": null
+        },
+        {
+          "word": "issuing state",
+          "translation": {
+            "tr": "veren eyalet",
+            "kg": "берген штат",
+            "ru": "выдавший штат"
+          },
+          "definition": "the state that issued your license",
+          "pronunciation": "ISH-oo-ing STAYT",
+          "example": "My license was issued in California.",
+          "audioFileName": null
+        }
+      ],
+      "dialogues": [
+        {
+          "title": "Document Verification - Standard Check",
+          "exchanges": [
+            {
+              "speaker": "Officer",
+              "text": "I need to verify your documents. Please provide your CDL, registration, and proof of insurance.",
+              "audioFileName": null
+            },
+            {
+              "speaker": "Driver",
+              "text": "Of course, officer. Here are my documents. My CDL, vehicle registration, and insurance card.",
+              "audioFileName": null
+            },
+            {
+              "speaker": "Officer",
+              "text": "I see your CDL was issued in Texas. Is your address still current?",
+              "audioFileName": null
+            },
+            {
+              "speaker": "Driver",
+              "text": "Yes, officer. I still live at the address on my license. I haven't moved.",
+              "audioFileName": null
+            },
+            {
+              "speaker": "Officer",
+              "text": "Your registration expires next month. Make sure to renew it before the expiration date.",
+              "audioFileName": null
+            },
+            {
+              "speaker": "Driver",
+              "text": "Thank you for the reminder, officer. I'll make sure to renew it on time.",
+              "audioFileName": null
+            }
+          ],
+          "audioFileName": null
+        }
+      ],
+      "tips": [
+        "Always carry your CDL, registration, and insurance card",
+        "Keep documents in an easily accessible location",
+        "Check expiration dates regularly",
+        "Update your address with the DMV if you move",
+        "Make copies of important documents",
+        "Know your license endorsements and restrictions",
+        "Keep your documents in good condition",
+        "Have backup copies in case of loss or damage"
+      ],
+      "assessments": [
+        {
+          "id": "document-check-q1",
+          "type": "multiple-choice",
+          "question": "What does CDL stand for?",
+          "audioText": null,
+          "options": [
+            "Commercial Driver's License",
+            "Commercial Driving License",
+            "Commercial Driver License",
+            "Commercial Driving Permit"
+          ],
+          "correctAnswer": "Commercial Driver's License",
+          "explanation": "CDL stands for Commercial Driver's License, which is required for operating commercial vehicles.",
+          "difficulty": "beginner",
+          "skillTested": "vocabulary",
+          "audioFileName": null
+        },
+        {
+          "id": "document-check-q2",
+          "type": "true-false",
+          "question": "You should update your address with the DMV if you move.",
+          "audioText": null,
+          "options": null,
+          "correctAnswer": "True",
+          "explanation": "It's important to keep your address current with the DMV to ensure you receive important notices.",
+          "difficulty": "beginner",
+          "skillTested": "practical-application",
+          "audioFileName": null
+        },
+        {
+          "id": "document-check-q3",
+          "type": "multiple-choice",
+          "question": "What should you do if your registration is expired?",
+          "audioText": null,
+          "options": [
+            "Ignore it until you get caught",
+            "Renew it immediately",
+            "Wait until next year",
+            "Drive without it"
+          ],
+          "correctAnswer": "Renew it immediately",
+          "explanation": "You should renew expired registration immediately to avoid citations and legal issues.",
+          "difficulty": "intermediate",
+          "skillTested": "practical-application",
+          "audioFileName": null
+        },
+        {
+          "id": "document-check-q4",
+          "type": "multiple-choice",
+          "question": "What is an endorsement on a CDL?",
+          "audioText": null,
+          "options": [
+            "A signature",
+            "Additional authorization for specific vehicle types",
+            "A recommendation letter",
+            "A type of restriction"
+          ],
+          "correctAnswer": "Additional authorization for specific vehicle types",
+          "explanation": "An endorsement is additional authorization that allows you to operate specific types of vehicles or carry certain cargo.",
+          "difficulty": "intermediate",
+          "skillTested": "vocabulary",
+          "audioFileName": null
+        },
+        {
+          "id": "document-check-q5",
+          "type": "scenario-response",
+          "question": "An officer asks if your address is current. What should you say?",
+          "audioText": null,
+          "options": null,
+          "correctAnswer": "Yes, officer. I still live at the address on my license.",
+          "explanation": "Be honest about your current address and inform the officer if it has changed.",
+          "difficulty": "intermediate",
+          "skillTested": "practical-application",
+          "audioFileName": null
+        }
+      ],
+      "estimatedMinutes": 30,
+      "difficulty": "beginner"
+    },
+    {
+      "id": "initial-stop-q1",
+      "vocabulary": [],
+      "dialogues": [],
+      "tips": [],
+      "assessments": [],
+      "estimatedMinutes": 0,
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "initial-stop-q2",
+      "vocabulary": [],
+      "dialogues": [],
+      "tips": [],
+      "assessments": [],
+      "estimatedMinutes": 0,
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "initial-stop-q3",
+      "vocabulary": [],
+      "dialogues": [],
+      "tips": [],
+      "assessments": [],
+      "estimatedMinutes": 0,
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "initial-stop-q4",
+      "vocabulary": [],
+      "dialogues": [],
+      "tips": [],
+      "assessments": [],
+      "estimatedMinutes": 0,
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "initial-stop-q5",
+      "vocabulary": [],
+      "dialogues": [],
+      "tips": [],
+      "assessments": [],
+      "estimatedMinutes": 0,
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "document-check-q1",
+      "vocabulary": [],
+      "dialogues": [],
+      "tips": [],
+      "assessments": [],
+      "estimatedMinutes": 0,
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "document-check-q2",
+      "vocabulary": [],
+      "dialogues": [],
+      "tips": [],
+      "assessments": [],
+      "estimatedMinutes": 0,
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "document-check-q3",
+      "vocabulary": [],
+      "dialogues": [],
+      "tips": [],
+      "assessments": [],
+      "estimatedMinutes": 0,
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "document-check-q4",
+      "vocabulary": [],
+      "dialogues": [],
+      "tips": [],
+      "assessments": [],
+      "estimatedMinutes": 0,
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "document-check-q5",
+      "vocabulary": [],
+      "dialogues": [],
+      "tips": [],
+      "assessments": [],
+      "estimatedMinutes": 0,
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "vehicle-inspection-q1",
+      "vocabulary": [],
+      "dialogues": [],
+      "tips": [],
+      "assessments": [],
+      "estimatedMinutes": 0,
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "vehicle-inspection-q2",
+      "vocabulary": [],
+      "dialogues": [],
+      "tips": [],
+      "assessments": [],
+      "estimatedMinutes": 0,
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "vehicle-inspection-q3",
+      "vocabulary": [],
+      "dialogues": [],
+      "tips": [],
+      "assessments": [],
+      "estimatedMinutes": 0,
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "vehicle-inspection-q4",
+      "vocabulary": [],
+      "dialogues": [],
+      "tips": [],
+      "assessments": [],
+      "estimatedMinutes": 0,
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "vehicle-inspection-q5",
+      "vocabulary": [],
+      "dialogues": [],
+      "tips": [],
+      "assessments": [],
+      "estimatedMinutes": 0,
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "explaining-situations-q1",
+      "vocabulary": [],
+      "dialogues": [],
+      "tips": [],
+      "assessments": [],
+      "estimatedMinutes": 0,
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "explaining-situations-q2",
+      "vocabulary": [],
+      "dialogues": [],
+      "tips": [],
+      "assessments": [],
+      "estimatedMinutes": 0,
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "explaining-situations-q3",
+      "vocabulary": [],
+      "dialogues": [],
+      "tips": [],
+      "assessments": [],
+      "estimatedMinutes": 0,
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "explaining-situations-q4",
+      "vocabulary": [],
+      "dialogues": [],
+      "tips": [],
+      "assessments": [],
+      "estimatedMinutes": 0,
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "explaining-situations-q5",
+      "vocabulary": [],
+      "dialogues": [],
+      "tips": [],
+      "assessments": [],
+      "estimatedMinutes": 0,
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "citations-tickets-q1",
+      "vocabulary": [],
+      "dialogues": [],
+      "tips": [],
+      "assessments": [],
+      "estimatedMinutes": 0,
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "citations-tickets-q2",
+      "vocabulary": [],
+      "dialogues": [],
+      "tips": [],
+      "assessments": [],
+      "estimatedMinutes": 0,
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "citations-tickets-q3",
+      "vocabulary": [],
+      "dialogues": [],
+      "tips": [],
+      "assessments": [],
+      "estimatedMinutes": 0,
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "citations-tickets-q4",
+      "vocabulary": [],
+      "dialogues": [],
+      "tips": [],
+      "assessments": [],
+      "estimatedMinutes": 0,
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "citations-tickets-q5",
+      "vocabulary": [],
+      "dialogues": [],
+      "tips": [],
+      "assessments": [],
+      "estimatedMinutes": 0,
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "emergency-situations-q1",
+      "vocabulary": [],
+      "dialogues": [],
+      "tips": [],
+      "assessments": [],
+      "estimatedMinutes": 0,
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "emergency-situations-q2",
+      "vocabulary": [],
+      "dialogues": [],
+      "tips": [],
+      "assessments": [],
+      "estimatedMinutes": 0,
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "emergency-situations-q3",
+      "vocabulary": [],
+      "dialogues": [],
+      "tips": [],
+      "assessments": [],
+      "estimatedMinutes": 0,
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "emergency-situations-q4",
+      "vocabulary": [],
+      "dialogues": [],
+      "tips": [],
+      "assessments": [],
+      "estimatedMinutes": 0,
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "emergency-situations-q5",
+      "vocabulary": [],
+      "dialogues": [],
+      "tips": [],
+      "assessments": [],
+      "estimatedMinutes": 0,
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "basic-greetings-q1",
+      "vocabulary": [],
+      "dialogues": [],
+      "tips": [],
+      "assessments": [],
+      "estimatedMinutes": 0,
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "basic-greetings-q2",
+      "vocabulary": [],
+      "dialogues": [],
+      "tips": [],
+      "assessments": [],
+      "estimatedMinutes": 0,
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "basic-greetings-q3",
+      "vocabulary": [],
+      "dialogues": [],
+      "tips": [],
+      "assessments": [],
+      "estimatedMinutes": 0,
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "basic-greetings-q4",
+      "vocabulary": [],
+      "dialogues": [],
+      "tips": [],
+      "assessments": [],
+      "estimatedMinutes": 0,
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "basic-greetings-q5",
+      "vocabulary": [],
+      "dialogues": [],
+      "tips": [],
+      "assessments": [],
+      "estimatedMinutes": 0,
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "road-signs-q1",
+      "vocabulary": [],
+      "dialogues": [],
+      "tips": [],
+      "assessments": [],
+      "estimatedMinutes": 0,
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "road-signs-q2",
+      "vocabulary": [],
+      "dialogues": [],
+      "tips": [],
+      "assessments": [],
+      "estimatedMinutes": 0,
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "road-signs-q3",
+      "vocabulary": [],
+      "dialogues": [],
+      "tips": [],
+      "assessments": [],
+      "estimatedMinutes": 0,
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "road-signs-q4",
+      "vocabulary": [],
+      "dialogues": [],
+      "tips": [],
+      "assessments": [],
+      "estimatedMinutes": 0,
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "road-signs-q5",
+      "vocabulary": [],
+      "dialogues": [],
+      "tips": [],
+      "assessments": [],
+      "estimatedMinutes": 0,
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "border-crossing-q1",
+      "vocabulary": [],
+      "dialogues": [],
+      "tips": [],
+      "assessments": [],
+      "estimatedMinutes": 0,
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "border-crossing-q2",
+      "vocabulary": [],
+      "dialogues": [],
+      "tips": [],
+      "assessments": [],
+      "estimatedMinutes": 0,
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "border-crossing-q3",
+      "vocabulary": [],
+      "dialogues": [],
+      "tips": [],
+      "assessments": [],
+      "estimatedMinutes": 0,
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "border-crossing-q4",
+      "vocabulary": [],
+      "dialogues": [],
+      "tips": [],
+      "assessments": [],
+      "estimatedMinutes": 0,
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "border-crossing-q5",
+      "vocabulary": [],
+      "dialogues": [],
+      "tips": [],
+      "assessments": [],
+      "estimatedMinutes": 0,
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "vehicle-maintenance-q1",
+      "vocabulary": [],
+      "dialogues": [],
+      "tips": [],
+      "assessments": [],
+      "estimatedMinutes": 0,
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "vehicle-maintenance-q2",
+      "vocabulary": [],
+      "dialogues": [],
+      "tips": [],
+      "assessments": [],
+      "estimatedMinutes": 0,
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "vehicle-maintenance-q3",
+      "vocabulary": [],
+      "dialogues": [],
+      "tips": [],
+      "assessments": [],
+      "estimatedMinutes": 0,
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "vehicle-maintenance-q4",
+      "vocabulary": [],
+      "dialogues": [],
+      "tips": [],
+      "assessments": [],
+      "estimatedMinutes": 0,
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "vehicle-maintenance-q5",
+      "vocabulary": [],
+      "dialogues": [],
+      "tips": [],
+      "assessments": [],
+      "estimatedMinutes": 0,
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "cargo-documentation-q1",
+      "vocabulary": [],
+      "dialogues": [],
+      "tips": [],
+      "assessments": [],
+      "estimatedMinutes": 0,
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "cargo-documentation-q2",
+      "vocabulary": [],
+      "dialogues": [],
+      "tips": [],
+      "assessments": [],
+      "estimatedMinutes": 0,
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "cargo-documentation-q3",
+      "vocabulary": [],
+      "dialogues": [],
+      "tips": [],
+      "assessments": [],
+      "estimatedMinutes": 0,
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "cargo-documentation-q4",
+      "vocabulary": [],
+      "dialogues": [],
+      "tips": [],
+      "assessments": [],
+      "estimatedMinutes": 0,
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "cargo-documentation-q5",
+      "vocabulary": [],
+      "dialogues": [],
+      "tips": [],
+      "assessments": [],
+      "estimatedMinutes": 0,
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "weather-road-safety-q1",
+      "vocabulary": [],
+      "dialogues": [],
+      "tips": [],
+      "assessments": [],
+      "estimatedMinutes": 0,
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "weather-road-safety-q2",
+      "vocabulary": [],
+      "dialogues": [],
+      "tips": [],
+      "assessments": [],
+      "estimatedMinutes": 0,
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "weather-road-safety-q3",
+      "vocabulary": [],
+      "dialogues": [],
+      "tips": [],
+      "assessments": [],
+      "estimatedMinutes": 0,
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "weather-road-safety-q4",
+      "vocabulary": [],
+      "dialogues": [],
+      "tips": [],
+      "assessments": [],
+      "estimatedMinutes": 0,
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "weather-road-safety-q5",
+      "vocabulary": [],
+      "dialogues": [],
+      "tips": [],
+      "assessments": [],
+      "estimatedMinutes": 0,
+      "difficulty": "intermediate"
+    }
+  ]
+}

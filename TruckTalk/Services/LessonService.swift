@@ -43,7 +43,6 @@ class LessonService: ObservableObject {
     
     // MARK: - Dependencies
     private let supabaseAPI: SupabaseAPI
-    private var fallbackDataService: DataService!
     
     // MARK: - Network Control
     private var lastRefreshTime: Date?
@@ -52,9 +51,6 @@ class LessonService: ObservableObject {
     // MARK: - Initialization
     init(supabaseAPI: SupabaseAPI? = nil) {
         self.supabaseAPI = supabaseAPI ?? SupabaseAPI.shared
-        Task {
-            await initializeFallbackData()
-        }
     }
     
     // MARK: - Public API
@@ -209,11 +205,6 @@ class LessonService: ObservableObject {
     }
     
     // MARK: - Private Methods
-    
-    private func initializeFallbackData() async {
-        fallbackDataService = DataService()
-        await fallbackDataService.loadAllContent()
-    }
     
     private func getBaseURL() -> String {
         return "https://pvstwthufbertinmojuk.supabase.co"

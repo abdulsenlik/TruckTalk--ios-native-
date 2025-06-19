@@ -13,6 +13,11 @@ class LanguageManager: ObservableObject {
         }
     }
     
+    /// Computed property to expose current language (alias for selectedLanguage)
+    var currentLanguage: SupportedLanguage {
+        return selectedLanguage
+    }
+    
     @Published var isLoading = false
     @Published var availableLanguages: [SupportedLanguage] = SupportedLanguage.allCases
     @Published var contentVersion: String = "1.0.0"
@@ -232,6 +237,7 @@ extension Notification.Name {
 // MARK: - SwiftUI Environment
 @MainActor
 struct LanguageManagerKey: EnvironmentKey {
+    @preconcurrency
     static let defaultValue = LanguageManager.shared
 }
 
@@ -266,43 +272,50 @@ extension View {
 
 extension BootcampDay {
     @MainActor 
-    func localizedTitle(using languageManager: LanguageManager = .shared) -> String {
-        languageManager.localizedTitle(for: self)
+    func localizedTitle(using languageManager: LanguageManager? = nil) -> String {
+        let manager = languageManager ?? LanguageManager.shared
+        return manager.localizedTitle(for: self)
     }
     
     @MainActor 
-    func localizedDescription(using languageManager: LanguageManager = .shared) -> String {
-        languageManager.localizedDescription(for: self)
+    func localizedDescription(using languageManager: LanguageManager? = nil) -> String {
+        let manager = languageManager ?? LanguageManager.shared
+        return manager.localizedDescription(for: self)
     }
 }
 
 extension LessonSection {
     @MainActor 
-    func localizedTitle(using languageManager: LanguageManager = .shared) -> String {
-        languageManager.localizedTitle(for: self)
+    func localizedTitle(using languageManager: LanguageManager? = nil) -> String {
+        let manager = languageManager ?? LanguageManager.shared
+        return manager.localizedTitle(for: self)
     }
 }
 
 extension LessonContent {
     @MainActor 
-    func localizedTranslation(using languageManager: LanguageManager = .shared) -> String {
-        languageManager.localizedTranslation(for: self)
+    func localizedTranslation(using languageManager: LanguageManager? = nil) -> String {
+        let manager = languageManager ?? LanguageManager.shared
+        return manager.localizedTranslation(for: self)
     }
     
     @MainActor 
-    func audioUrl(using languageManager: LanguageManager = .shared) -> String? {
-        languageManager.audioUrl(for: self)
+    func audioUrl(using languageManager: LanguageManager? = nil) -> String? {
+        let manager = languageManager ?? LanguageManager.shared
+        return manager.audioUrl(for: self)
     }
 }
 
 extension EmergencyPhrase {
     @MainActor 
-    func localizedTranslation(using languageManager: LanguageManager = .shared) -> String {
-        languageManager.localizedTranslation(for: self)
+    func localizedTranslation(using languageManager: LanguageManager? = nil) -> String {
+        let manager = languageManager ?? LanguageManager.shared
+        return manager.localizedTranslation(for: self)
     }
     
     @MainActor 
-    func audioUrl(using languageManager: LanguageManager = .shared) -> String? {
-        languageManager.audioUrl(for: self)
+    func audioUrl(using languageManager: LanguageManager? = nil) -> String? {
+        let manager = languageManager ?? LanguageManager.shared
+        return manager.audioUrl(for: self)
     }
 } 

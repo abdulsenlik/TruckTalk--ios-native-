@@ -43,19 +43,27 @@ class DataService: ObservableObject {
     private var languageManager = LanguageManager.shared
     private var cancellables = Set<AnyCancellable>()
     
+    // MARK: - Loading State
+    private var isLoading = false
+    private var hasInitialLoadCompleted = false
+    
     init() {
-        // Observe language changes
+        // Observe language changes - but only after initial load is complete
         languageManager.$selectedLanguage
             .sink { [weak self] newLanguage in
                 Task { @MainActor in
-                    self?.userProgress.selectedLanguage = newLanguage
-                    await self?.loadLocalizedContent()
+                    guard let self = self, self.hasInitialLoadCompleted else { return }
+                    guard !self.isLoading else { return } // Prevent multiple simultaneous loads
+                    
+                    self.userProgress.selectedLanguage = newLanguage
+                    await self.loadLocalizedContent()
                 }
             }
             .store(in: &cancellables)
         
         Task {
             await loadLocalizedContent()
+            hasInitialLoadCompleted = true
             // Only try online data once during initialization
             await initializeOnlineData()
         }
@@ -70,9 +78,13 @@ class DataService: ObservableObject {
     
     /// Load localized content from JSON files
     private func loadLocalizedContent() async {
-        async let bootcampTask = loadBootcampData()
-        async let emergencyTask = loadEmergencyPhrases()
-        async let quizzesTask = loadQuizzes()
+        guard !isLoading else { return } // Prevent concurrent loads
+        isLoading = true
+        defer { isLoading = false }
+        
+        async let bootcampTask: Void = loadBootcampData()
+        async let emergencyTask: Void = loadEmergencyPhrases()
+        async let quizzesTask: Void = loadQuizzes()
         
         // Wait for all content to load
         await bootcampTask

@@ -13,29 +13,37 @@ struct MainTabView: View {
                 }
                 .tag(0)
             
+            // Curriculum Tab
+            CurriculumDetailView()
+                .tabItem {
+                    Image(systemName: selectedTab == 1 ? "book.fill" : "book")
+                    Text("Curriculum")
+                }
+                .tag(1)
+            
             // Emergency Tab
             EmergencyPhrasesView()
                 .tabItem {
-                    Image(systemName: selectedTab == 1 ? "exclamationmark.triangle.fill" : "exclamationmark.triangle")
+                    Image(systemName: selectedTab == 2 ? "exclamationmark.triangle.fill" : "exclamationmark.triangle")
                     Text("Emergency")
                 }
-                .tag(1)
+                .tag(2)
             
             // Progress Tab
             UserProgressView()
                 .tabItem {
-                    Image(systemName: selectedTab == 2 ? "chart.line.uptrend.xyaxis" : "chart.line.uptrend.xyaxis")
+                    Image(systemName: selectedTab == 3 ? "chart.line.uptrend.xyaxis" : "chart.line.uptrend.xyaxis")
                     Text("Progress")
                 }
-                .tag(2)
+                .tag(3)
             
             // Profile Tab
             ProfileView()
                 .tabItem {
-                    Image(systemName: selectedTab == 3 ? "person.fill" : "person")
+                    Image(systemName: selectedTab == 4 ? "person.fill" : "person")
                     Text("Profile")
                 }
-                .tag(3)
+                .tag(4)
         }
         .tint(.accentColor)
     }
@@ -43,7 +51,7 @@ struct MainTabView: View {
 
 // MARK: - User Progress View
 struct UserProgressView: View {
-    @StateObject private var dataService = DataService()
+    @EnvironmentObject var dataService: DataService
     
     var body: some View {
         NavigationStack {

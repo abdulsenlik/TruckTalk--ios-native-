@@ -1,0 +1,477 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2024-01-15",
+  "sections": [
+    {
+      "id": "initial-stop",
+      "title": "Initial Traffic Stop",
+      "description": "Essential phrases and vocabulary for when an officer first pulls you over.",
+      "vocabulary": [
+        {
+          "word": "license",
+          "translation": {
+            "tr": "ehliyet",
+            "ky": "айдоочунун күбөлүгү",
+            "ru": "водительские права"
+          },
+          "definition": "official document permitting you to drive",
+          "pronunciation": "LAI-suhns",
+          "example": "Officer, here is my driver's license.",
+          "audioFileName": null
+        },
+        {
+          "word": "registration",
+          "translation": {
+            "tr": "ruhsat",
+            "ky": "каттоо күбөлүгү",
+            "ru": "регистрация"
+          },
+          "definition": "document showing vehicle ownership",
+          "pronunciation": "rej-uh-STRAY-shuhn",
+          "example": "My vehicle registration is in the glove box.",
+          "audioFileName": null
+        },
+        {
+          "word": "insurance",
+          "translation": {
+            "tr": "sigorta",
+            "ky": "камсыздандыруу",
+            "ru": "страховка"
+          },
+          "definition": "protection against financial loss",
+          "pronunciation": "in-SHOOR-uhns",
+          "example": "I have current insurance for this truck.",
+          "audioFileName": null
+        },
+        {
+          "word": "pull over",
+          "translation": {
+            "tr": "kenara çekmek",
+            "ky": "четке чыгуу",
+            "ru": "съехать на обочину"
+          },
+          "definition": "to move your vehicle to the side of the road",
+          "pronunciation": "POOL OH-ver",
+          "example": "I will pull over to the right shoulder.",
+          "audioFileName": null
+        },
+        {
+          "word": "officer",
+          "translation": {
+            "tr": "memur",
+            "ky": "кызматкер",
+            "ru": "офицер"
+          },
+          "definition": "a police officer or law enforcement official",
+          "pronunciation": "AW-fi-ser",
+          "example": "Good morning, officer. How can I help you?",
+          "audioFileName": null
+        },
+        {
+          "word": "speed limit",
+          "translation": {
+            "tr": "hız sınırı",
+            "ky": "ылдамдык чеги",
+            "ru": "ограничение скорости"
+          },
+          "definition": "maximum legal speed",
+          "pronunciation": "SPEED LIM-it",
+          "example": "What is the speed limit on this highway?",
+          "audioFileName": null
+        },
+        {
+          "word": "speeding",
+          "translation": {
+            "tr": "hız aşımı",
+            "ky": "ылдамдыкты арттыруу",
+            "ru": "превышение скорости"
+          },
+          "definition": "driving faster than the legal speed limit",
+          "pronunciation": "SPEED-ing",
+          "example": "I apologize for speeding, officer.",
+          "audioFileName": null
+        },
+        {
+          "word": "traffic violation",
+          "translation": {
+            "tr": "trafik ihlali",
+            "ky": "жол эрежелерин бузуу",
+            "ru": "нарушение правил дорожного движения"
+          },
+          "definition": "breaking a traffic law",
+          "pronunciation": "TRAF-ik vahy-uh-LAY-shuhn",
+          "example": "This is my first traffic violation this year.",
+          "audioFileName": null
+        },
+        {
+          "word": "documents",
+          "translation": {
+            "tr": "belgeler",
+            "ky": "документтер",
+            "ru": "документы"
+          },
+          "definition": "official papers required for driving",
+          "pronunciation": "DOK-yuh-muhnts",
+          "example": "All my documents are current and valid.",
+          "audioFileName": null
+        },
+        {
+          "word": "hands visible",
+          "translation": {
+            "tr": "eller görünür",
+            "ky": "колдор көрүнүп турат",
+            "ru": "руки на виду"
+          },
+          "definition": "keeping hands where officer can see them",
+          "pronunciation": "HANDS VIZ-uh-buhl",
+          "example": "I will keep my hands visible on the steering wheel.",
+          "audioFileName": null
+        },
+        {
+          "word": "steering wheel",
+          "translation": {
+            "tr": "direksiyon",
+            "ky": "руль",
+            "ru": "руль"
+          },
+          "definition": "circular control device for directing vehicle",
+          "pronunciation": "STEER-ing WHEEL",
+          "example": "My hands are on the steering wheel, officer.",
+          "audioFileName": null
+        },
+        {
+          "word": "apologize",
+          "translation": {
+            "tr": "özür dilemek",
+            "ky": "кечирим сурануу",
+            "ru": "извиняться"
+          },
+          "definition": "to express regret for a mistake",
+          "pronunciation": "uh-POL-uh-jahyz",
+          "example": "I apologize for my mistake, officer.",
+          "audioFileName": null
+        },
+        {
+          "word": "understand",
+          "translation": {
+            "tr": "anlamak",
+            "ky": "түшүнүү",
+            "ru": "понимать"
+          },
+          "definition": "to comprehend what is being said",
+          "pronunciation": "uhn-der-STAND",
+          "example": "I understand what you are saying, officer.",
+          "audioFileName": null
+        },
+        {
+          "word": "slowly",
+          "translation": {
+            "tr": "yavaşça",
+            "ky": "жай эле",
+            "ru": "медленно"
+          },
+          "definition": "at a reduced speed or pace",
+          "pronunciation": "SLOH-lee",
+          "example": "I will move slowly to get my wallet.",
+          "audioFileName": null
+        },
+        {
+          "word": "wallet",
+          "translation": {
+            "tr": "cüzdan",
+            "ky": "капчык",
+            "ru": "кошелек"
+          },
+          "definition": "small case for carrying money and cards",
+          "pronunciation": "WAWL-it",
+          "example": "My license is in my wallet in my back pocket.",
+          "audioFileName": null
+        },
+        {
+          "word": "glove box",
+          "translation": {
+            "tr": "torpido gözü",
+            "ky": "кол кутусу",
+            "ru": "бардачок"
+          },
+          "definition": "storage compartment in vehicle dashboard",
+          "pronunciation": "GLUHV BOKS",
+          "example": "The registration is in the glove box.",
+          "audioFileName": null
+        },
+        {
+          "word": "commercial vehicle",
+          "translation": {
+            "tr": "ticari araç",
+            "ky": "коммерциялык унаа",
+            "ru": "коммерческий транспорт"
+          },
+          "definition": "vehicle used for business purposes",
+          "pronunciation": "kuh-MUR-shuhl VEE-i-kuhl",
+          "example": "This is a commercial vehicle for cargo transport.",
+          "audioFileName": null
+        },
+        {
+          "word": "shoulder",
+          "translation": {
+            "tr": "banket",
+            "ky": "жол четинде",
+            "ru": "обочина"
+          },
+          "definition": "edge of the road for emergency stops",
+          "pronunciation": "SHOHL-der",
+          "example": "I pulled over to the shoulder safely.",
+          "audioFileName": null
+        },
+        {
+          "word": "emergency flashers",
+          "translation": {
+            "tr": "dörtlü flaşör",
+            "ky": "эскертүү жарыктары",
+            "ru": "аварийная сигнализация"
+          },
+          "definition": "warning lights that flash on all sides",
+          "pronunciation": "ih-MUR-juhn-see FLASH-erz",
+          "example": "I turned on my emergency flashers when I stopped.",
+          "audioFileName": null
+        },
+        {
+          "word": "cooperate",
+          "translation": {
+            "tr": "işbirliği yapmak",
+            "ky": "кызматташуу",
+            "ru": "сотрудничать"
+          },
+          "definition": "to work together and follow instructions",
+          "pronunciation": "koh-OP-uh-rayt",
+          "example": "I want to cooperate fully with your investigation.",
+          "audioFileName": null
+        }
+      ],
+      "dialogues": [
+        {
+          "title": "Being Pulled Over - Polite Officer, Nervous Driver",
+          "exchanges": [
+            {
+              "speaker": "Officer",
+              "text": "Good afternoon. I need to see your license, registration, and insurance please.",
+              "audioFileName": null
+            },
+            {
+              "speaker": "Driver",
+              "text": "Good afternoon, officer. Yes, of course. My hands are on the steering wheel. May I reach for my documents?",
+              "audioFileName": null
+            },
+            {
+              "speaker": "Officer",
+              "text": "Yes, go ahead slowly. Take your time.",
+              "audioFileName": null
+            },
+            {
+              "speaker": "Driver",
+              "text": "Thank you, officer. Here is my CDL, insurance card, and registration. I'm sorry, my English is not perfect.",
+              "audioFileName": null
+            },
+            {
+              "speaker": "Officer",
+              "text": "That's okay, you're doing fine. Do you know why I pulled you over today?",
+              "audioFileName": null
+            },
+            {
+              "speaker": "Driver",
+              "text": "No, officer. I'm not sure. Did I do something wrong? I was trying to be very careful.",
+              "audioFileName": null
+            },
+            {
+              "speaker": "Officer",
+              "text": "You were traveling 65 miles per hour in a 55 mile per hour zone. The speed limit dropped back there at the construction sign.",
+              "audioFileName": null
+            },
+            {
+              "speaker": "Driver",
+              "text": "Oh no, I'm very sorry, officer. I have a delivery deadline today and I was worried about being late. But I should have been more careful with the speed limit. This is my mistake.",
+              "audioFileName": null
+            }
+          ],
+          "audioFileName": null
+        },
+        {
+          "title": "Being Pulled Over - Formal Officer, Confident Driver",
+          "exchanges": [
+            {
+              "speaker": "Officer",
+              "text": "Sir, I'm Officer Martinez with the State Police. Please provide your commercial driver's license, vehicle registration, and proof of insurance.",
+              "audioFileName": null
+            },
+            {
+              "speaker": "Driver",
+              "text": "Good evening, Officer Martinez. Here are my documents. My CDL, registration, and current insurance card. Is there a specific reason for this stop?",
+              "audioFileName": null
+            },
+            {
+              "speaker": "Officer",
+              "text": "I clocked you at 68 miles per hour in a posted 55 mile per hour zone. Are you aware of the speed limit on this stretch of highway?",
+              "audioFileName": null
+            },
+            {
+              "speaker": "Driver",
+              "text": "Yes, officer, I am aware it's 55. I apologize - I was maintaining pace with traffic flow, but I understand that doesn't excuse exceeding the limit. I should have been more attentive.",
+              "audioFileName": null
+            },
+            {
+              "speaker": "Officer",
+              "text": "Traffic flow is not a legal defense for speeding. What's your destination and purpose of travel?",
+              "audioFileName": null
+            },
+            {
+              "speaker": "Driver",
+              "text": "I'm delivering manufactured goods to a distribution center in Columbus. I have the bill of lading here if you need to see it. I've been driving this route for three years without any violations.",
+              "audioFileName": null
+            },
+            {
+              "speaker": "Officer",
+              "text": "That won't be necessary. Given your clean record, I'm issuing a written warning today. Please be more mindful of posted speed limits, especially in commercial vehicles.",
+              "audioFileName": null
+            },
+            {
+              "speaker": "Driver",
+              "text": "Thank you, officer. I appreciate the warning and will definitely be more careful. I understand the responsibility that comes with operating a commercial vehicle.",
+              "audioFileName": null
+            }
+          ],
+          "audioFileName": null
+        },
+        {
+          "title": "Being Pulled Over - Stern Officer, Confused Driver",
+          "exchanges": [
+            {
+              "speaker": "Officer",
+              "text": "Turn off your engine and step out of the vehicle. Keep your hands visible at all times.",
+              "audioFileName": null
+            },
+            {
+              "speaker": "Driver",
+              "text": "Officer, I... I don't understand. What did I do wrong? Should I get out? I'm sorry, I'm confused.",
+              "audioFileName": null
+            },
+            {
+              "speaker": "Officer",
+              "text": "You were weaving between lanes and driving erratically. Have you been drinking or taking any medications today?",
+              "audioFileName": null
+            },
+            {
+              "speaker": "Driver",
+              "text": "No, no alcohol, officer! I don't drink. I was... I was looking at my GPS because I got lost. I know that was wrong. I'm very sorry.",
+              "audioFileName": null
+            },
+            {
+              "speaker": "Officer",
+              "text": "Looking at GPS while driving is distracted driving. You could have caused a serious accident. How long have you been driving commercially?",
+              "audioFileName": null
+            },
+            {
+              "speaker": "Driver",
+              "text": "Only six months, officer. I'm still learning. I know I made a mistake. I should have pulled over to check the GPS. I was scared I would be late for delivery.",
+              "audioFileName": null
+            },
+            {
+              "speaker": "Officer",
+              "text": "Being late is not worth risking lives. I'm issuing you a citation for distracted driving. You need to attend a safety course within 30 days.",
+              "audioFileName": null
+            },
+            {
+              "speaker": "Driver",
+              "text": "Yes, officer. I understand. I will take the course. I promise to be more careful. Thank you for teaching me this important lesson about safety.",
+              "audioFileName": null
+            }
+          ],
+          "audioFileName": null
+        }
+      ],
+      "tips": [
+        "Always keep your hands visible on the steering wheel until instructed otherwise",
+        "Address the officer as 'officer' or 'sir/ma'am'",
+        "Move slowly when reaching for documents",
+        "Inform the officer before reaching for documents: 'My license is in my wallet. May I reach for it?'",
+        "Stay calm and speak clearly",
+        "If you don't understand something, ask the officer to repeat it",
+        "Never argue with an officer - you can contest a ticket in court later",
+        "Keep your documents organized and easily accessible"
+      ],
+      "assessments": [
+        {
+          "id": "initial-stop-q1",
+          "type": "multiple-choice",
+          "question": "What should you do first when pulled over by police?",
+          "audioText": null,
+          "options": [
+            "Get out of your vehicle immediately",
+            "Keep your hands visible on the steering wheel",
+            "Start looking for your documents",
+            "Call your lawyer"
+          ],
+          "correctAnswer": "1",
+          "explanation": "Always keep your hands visible on the steering wheel until the officer instructs you otherwise. This shows you are not a threat.",
+          "difficulty": "beginner",
+          "skillTested": "practical-application",
+          "audioFileName": null
+        },
+        {
+          "id": "initial-stop-q2",
+          "type": "fill-in-blank",
+          "question": "When an officer asks for your documents, you should say: 'May I reach for my _____?'",
+          "audioText": null,
+          "options": null,
+          "correctAnswer": "documents",
+          "explanation": "Always ask permission before reaching for documents to show respect and avoid alarming the officer.",
+          "difficulty": "beginner",
+          "skillTested": "vocabulary",
+          "audioFileName": null
+        },
+        {
+          "id": "initial-stop-q3",
+          "type": "scenario-response",
+          "question": "An officer asks why you were speeding. What's the best response?",
+          "audioText": null,
+          "options": [
+            "I was in a hurry",
+            "I apologize, officer. I should have been more careful with the speed limit.",
+            "Everyone else was speeding too",
+            "I didn't see the speed limit sign"
+          ],
+          "correctAnswer": "1",
+          "explanation": "Take responsibility for your actions and apologize. Don't make excuses or blame others.",
+          "difficulty": "intermediate",
+          "skillTested": "practical-application",
+          "audioFileName": null
+        },
+        {
+          "id": "initial-stop-q4",
+          "type": "audio-based",
+          "question": "Listen to this officer's request and identify what they want:",
+          "audioText": "I need to see your license, registration, and insurance please.",
+          "options": null,
+          "correctAnswer": "License, registration, and insurance",
+          "explanation": "The officer is requesting three essential documents: driver's license, vehicle registration, and proof of insurance.",
+          "difficulty": "intermediate",
+          "skillTested": "context",
+          "audioFileName": null
+        },
+        {
+          "id": "initial-stop-q5",
+          "type": "true-false",
+          "question": "True or False: It's okay to argue with a police officer if you think they're wrong.",
+          "audioText": null,
+          "options": null,
+          "correctAnswer": "False",
+          "explanation": "Never argue with an officer during a traffic stop. You can contest a ticket or citation in court later if needed.",
+          "difficulty": "beginner",
+          "skillTested": "practical-application",
+          "audioFileName": null
+        }
+      ],
+      "estimatedMinutes": 45,
+      "difficulty": "beginner"
+    }
+  ]
+} 

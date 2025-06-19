@@ -35,6 +35,143 @@ enum SupportedLanguage: String, CaseIterable, Codable {
     }
 }
 
+// MARK: - Enhanced Curriculum Models (from Web App)
+
+struct VocabularyItem: Identifiable, Codable {
+    let id = UUID()
+    let word: String
+    let translation: [String: String] // Language code to translation
+    let definition: String
+    let pronunciation: String
+    let example: String
+    let audioFileName: String?
+    
+    enum CodingKeys: String, CodingKey {
+        case word, translation, definition, pronunciation, example, audioFileName
+    }
+}
+
+struct DialogueExchange: Identifiable, Codable {
+    let id = UUID()
+    let speaker: String
+    let text: String
+    let audioFileName: String?
+    
+    enum CodingKeys: String, CodingKey {
+        case speaker, text, audioFileName
+    }
+}
+
+struct Dialogue: Identifiable, Codable {
+    let id = UUID()
+    let title: String
+    let exchanges: [DialogueExchange]
+    let audioFileName: String?
+    
+    enum CodingKeys: String, CodingKey {
+        case title, exchanges, audioFileName
+    }
+}
+
+struct AssessmentQuestion: Identifiable, Codable {
+    let id: String
+    let type: QuestionType
+    let question: String
+    let audioText: String? // For audio-based questions
+    let options: [String]? // For multiple choice
+    let correctAnswer: String
+    let explanation: String
+    let difficulty: DifficultyLevel
+    let skillTested: SkillType
+    let audioFileName: String?
+    
+    enum CodingKeys: String, CodingKey {
+        case id, type, question, audioText, options, correctAnswer, explanation, difficulty, skillTested, audioFileName
+    }
+}
+
+enum QuestionType: String, Codable, CaseIterable {
+    case multipleChoice = "multiple-choice"
+    case fillInBlank = "fill-in-blank"
+    case audioBased = "audio-based"
+    case scenarioResponse = "scenario-response"
+    case trueFalse = "true-false"
+    
+    var displayName: String {
+        switch self {
+        case .multipleChoice: return "Multiple Choice"
+        case .fillInBlank: return "Fill in the Blank"
+        case .audioBased: return "Audio Question"
+        case .scenarioResponse: return "Scenario Response"
+        case .trueFalse: return "True/False"
+        }
+    }
+    
+    var icon: String {
+        switch self {
+        case .multipleChoice: return "list.bullet.circle.fill"
+        case .fillInBlank: return "pencil.circle.fill"
+        case .audioBased: return "speaker.wave.3.circle.fill"
+        case .scenarioResponse: return "text.bubble.circle.fill"
+        case .trueFalse: return "checkmark.circle.fill"
+        }
+    }
+}
+
+enum SkillType: String, Codable, CaseIterable {
+    case vocabulary = "vocabulary"
+    case grammar = "grammar"
+    case context = "context"
+    case pronunciation = "pronunciation"
+    case practicalApplication = "practical-application"
+    
+    var displayName: String {
+        switch self {
+        case .vocabulary: return "Vocabulary"
+        case .grammar: return "Grammar"
+        case .context: return "Context"
+        case .pronunciation: return "Pronunciation"
+        case .practicalApplication: return "Practical Application"
+        }
+    }
+    
+    var icon: String {
+        switch self {
+        case .vocabulary: return "book.fill"
+        case .grammar: return "textformat"
+        case .context: return "bubble.left.and.bubble.right.fill"
+        case .pronunciation: return "speaker.wave.2.fill"
+        case .practicalApplication: return "car.fill"
+        }
+    }
+}
+
+struct CurriculumSection: Identifiable, Codable {
+    let id: String
+    let title: String
+    let description: String
+    let vocabulary: [VocabularyItem]
+    let dialogues: [Dialogue]
+    let tips: [String]
+    let assessments: [AssessmentQuestion]
+    let estimatedMinutes: Int
+    let difficulty: DifficultyLevel
+    
+    enum CodingKeys: String, CodingKey {
+        case id, title, description, vocabulary, dialogues, tips, assessments, estimatedMinutes, difficulty
+    }
+}
+
+struct TrafficStopCourse: Codable {
+    let version: String
+    let lastUpdated: String
+    let sections: [CurriculumSection]
+    
+    enum CodingKeys: String, CodingKey {
+        case version, lastUpdated, sections
+    }
+}
+
 // MARK: - Core Educational Models
 
 struct TruckTalkBootcamp: Codable {
@@ -65,6 +202,14 @@ enum DifficultyLevel: String, Codable, CaseIterable {
         case .beginner: return "1.circle.fill"
         case .intermediate: return "2.circle.fill"
         case .advanced: return "3.circle.fill"
+        }
+    }
+    
+    var color: String {
+        switch self {
+        case .beginner: return "green"
+        case .intermediate: return "orange"
+        case .advanced: return "red"
         }
     }
 }
@@ -311,28 +456,6 @@ struct QuizQuestion: Identifiable, Codable {
     let explanation: [String: String]?
     let audioFileName: String?
     let points: Int
-}
-
-enum QuestionType: String, Codable, CaseIterable {
-    case multipleChoice = "multiple_choice"
-    case multipleAnswer = "multiple_answer"
-    case trueFalse = "true_false"
-    case fillInBlank = "fill_in_blank"
-    case matching = "matching"
-    case listening = "listening"
-    case ordering = "ordering"
-    
-    var displayName: String {
-        switch self {
-        case .multipleChoice: return "Multiple Choice"
-        case .multipleAnswer: return "Multiple Answer"
-        case .trueFalse: return "True/False"
-        case .fillInBlank: return "Fill in the Blank"
-        case .matching: return "Matching"
-        case .listening: return "Listening"
-        case .ordering: return "Put in Order"
-        }
-    }
 }
 
 struct QuizOption: Identifiable, Codable {
@@ -606,5 +729,82 @@ enum ReminderFrequency: String, Codable, CaseIterable {
         case .weekly: return "Weekly"
         case .custom: return "Custom"
         }
+    }
+}
+
+// MARK: - Curriculum Stats for Progress Tracking
+
+struct CurriculumStats: Codable {
+    let totalSections: Int
+    let totalVocabulary: Int
+    let totalDialogues: Int
+    let totalAssessments: Int
+    let totalTips: Int
+    let estimatedTotalMinutes: Int
+    let completedSections: Int
+    let completedVocabulary: Int
+    let completedDialogues: Int
+    let completedAssessments: Int
+    let completionPercentage: Double
+    
+    init(totalSections: Int, totalVocabulary: Int, totalDialogues: Int, totalAssessments: Int, totalTips: Int, estimatedTotalMinutes: Int, completedSections: Int = 0, completedVocabulary: Int = 0, completedDialogues: Int = 0, completedAssessments: Int = 0) {
+        self.totalSections = totalSections
+        self.totalVocabulary = totalVocabulary
+        self.totalDialogues = totalDialogues
+        self.totalAssessments = totalAssessments
+        self.totalTips = totalTips
+        self.estimatedTotalMinutes = estimatedTotalMinutes
+        self.completedSections = completedSections
+        self.completedVocabulary = completedVocabulary
+        self.completedDialogues = completedDialogues
+        self.completedAssessments = completedAssessments
+        
+        let totalItems = totalSections + totalVocabulary + totalDialogues + totalAssessments
+        let completedItems = completedSections + completedVocabulary + completedDialogues + completedAssessments
+        self.completionPercentage = totalItems > 0 ? Double(completedItems) / Double(totalItems) * 100.0 : 0.0
+    }
+}
+
+// MARK: - User Progress Tracking
+
+struct SectionProgress: Codable {
+    let sectionId: String
+    let isCompleted: Bool
+    let completionDate: Date?
+    let timeSpent: TimeInterval
+    let vocabularyMastered: Int
+    let dialoguesCompleted: Int
+    let assessmentsPassed: Int
+    
+    enum CodingKeys: String, CodingKey {
+        case sectionId, isCompleted, completionDate, timeSpent, vocabularyMastered, dialoguesCompleted, assessmentsPassed
+    }
+}
+
+struct VocabularyProgress: Codable {
+    let vocabularyId: String
+    let isMastered: Bool
+    let masteryLevel: Int // 0-5 scale
+    let lastReviewed: Date?
+    let reviewCount: Int
+    let correctAnswers: Int
+    let totalAttempts: Int
+    
+    enum CodingKeys: String, CodingKey {
+        case vocabularyId, isMastered, masteryLevel, lastReviewed, reviewCount, correctAnswers, totalAttempts
+    }
+}
+
+struct AssessmentProgress: Codable {
+    let assessmentId: String
+    let isCompleted: Bool
+    let score: Double
+    let maxScore: Double
+    let completionDate: Date?
+    let attempts: Int
+    let bestScore: Double
+    
+    enum CodingKeys: String, CodingKey {
+        case assessmentId, isCompleted, score, maxScore, completionDate, attempts, bestScore
     }
 } 

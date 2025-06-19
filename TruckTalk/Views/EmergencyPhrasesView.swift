@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct EmergencyPhrasesView: View {
-    @StateObject private var dataService = DataService()
+    @EnvironmentObject var dataService: DataService
     @StateObject private var audioManager = AudioManager()
     @State private var selectedCategory: EmergencyCategory? = nil
     
@@ -221,4 +221,5 @@ struct EmergencyPhrasesView: View {
 
 #Preview {
     EmergencyPhrasesView()
+        .environmentObject(DataService())
 } 

@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct HomeView: View {
-    @StateObject private var dataService = DataService()
+    @EnvironmentObject var dataService: DataService
     @State private var selectedDay: BootcampDay?
     
     var body: some View {
@@ -280,4 +280,5 @@ struct HomeView: View {
 
 #Preview {
     HomeView()
+        .environmentObject(DataService())
 } 
