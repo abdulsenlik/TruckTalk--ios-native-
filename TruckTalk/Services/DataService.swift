@@ -56,6 +56,7 @@ class DataService: ObservableObject {
         
         Task {
             await loadLocalizedContent()
+            // Only try online data once during initialization
             await initializeOnlineData()
         }
     }
@@ -118,13 +119,22 @@ class DataService: ObservableObject {
     
     /// Initialize online data and fall back to offline if needed
     private func initializeOnlineData() async {
-        await lessonService.refreshAllData()
-        
-        // Check if we have online data
-        if lessonService.hasCachedLessons || lessonService.hasCachedEmergencyPhrases {
-            isOnlineMode = true
-            lastSyncDate = Date()
-            await syncOnlineDataToLocal()
+        // Only try to fetch online data if we don't have local data
+        if bootcampDays.isEmpty || emergencyPhrases.isEmpty {
+            print("🌐 Attempting to fetch online data...")
+            await lessonService.refreshAllData()
+            
+            // Check if we have online data
+            if lessonService.hasCachedLessons || lessonService.hasCachedEmergencyPhrases {
+                isOnlineMode = true
+                lastSyncDate = Date()
+                await syncOnlineDataToLocal()
+                print("✅ Successfully loaded online data")
+            } else {
+                print("📱 Using offline data only")
+            }
+        } else {
+            print("📱 Using cached local data")
         }
     }
     

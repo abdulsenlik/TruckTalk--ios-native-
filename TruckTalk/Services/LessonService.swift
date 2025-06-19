@@ -45,6 +45,10 @@ class LessonService: ObservableObject {
     private let supabaseAPI: SupabaseAPI
     private var fallbackDataService: DataService!
     
+    // MARK: - Network Control
+    private var lastRefreshTime: Date?
+    private let minimumRefreshInterval: TimeInterval = 30 // 30 seconds
+    
     // MARK: - Initialization
     init(supabaseAPI: SupabaseAPI? = nil) {
         self.supabaseAPI = supabaseAPI ?? SupabaseAPI.shared
@@ -57,8 +61,18 @@ class LessonService: ObservableObject {
     
     /// Refresh all data from Supabase
     func refreshAllData() async {
+        // Check if we should skip this refresh due to recent activity
+        if let lastRefresh = lastRefreshTime,
+           Date().timeIntervalSince(lastRefresh) < minimumRefreshInterval {
+            print("⏱️ Skipping refresh - too soon since last update")
+            return
+        }
+        
         isLoading = true
-        defer { isLoading = false }
+        defer { 
+            isLoading = false
+            lastRefreshTime = Date()
+        }
         
         await withTaskGroup(of: Void.self) { group in
             group.addTask { await self.fetchAllLessons() }
@@ -170,11 +184,17 @@ class LessonService: ObservableObject {
             let fetchedPhrases = try JSONDecoder().decode([SupabaseEmergencyPhrase].self, from: data)
             emergencyPhrases = fetchedPhrases
             
-            print("✅ Fetched \(fetchedPhrases.count) emergency phrases")
+            print("✅ Fetched \(fetchedPhrases.count) emergency phrases from Supabase")
             
         } catch {
-            print("❌ Failed to fetch emergency phrases: \(error)")
+            print("❌ Failed to fetch emergency phrases from Supabase: \(error)")
             lastError = .networkError(error.localizedDescription)
+            
+            // Fallback to local data if network fails
+            if emergencyPhrases.isEmpty {
+                print("📚 Falling back to local emergency phrase data")
+                await loadMockData()
+            }
         }
     }
     
